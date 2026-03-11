@@ -1,0 +1,26 @@
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+error_log
+
+# Dépendances
+/vendor/
+/node_modules/
+
+# Cache
+*.cache
