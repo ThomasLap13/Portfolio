@@ -1,4 +1,5 @@
 <?php
+$base_path = './';
 include '../includes/header.php';
 ?>
 
@@ -29,14 +30,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/scolaires/n8n/N8N.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Workflow Automation N8N">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/n8n/N8N.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Workflow Automation N8N">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Workflow Global</h5>
                                     <p class="mb-0">Vue d'ensemble du processus d'automatisation.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/scolaires/n8n/Notion.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Intégration Notion">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/n8n/Notion.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Intégration Notion">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Intégration Notion</h5>
                                     <p class="mb-0">Connexion et insertion automatique des données.</p>
@@ -90,21 +91,21 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/scolaires/portfolio/repos.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Repository">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/repos.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Repository">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Gestion de Version</h5>
                                     <p class="mb-0">Utilisation de Git et Azure DevOps pour le suivi du projet.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/scolaires/portfolio/dev.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Développement">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/dev.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Développement">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Développement Local</h5>
                                     <p class="mb-0">Environnement de développement avec WAMP et VS Code.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/scolaires/portfolio/azur.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Azure">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/azur.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Azure">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Déploiement Azure</h5>
                                     <p class="mb-0">Hébergement et déploiement continu sur Azure Web Apps.</p>
@@ -172,14 +173,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Mode Classique</h5>
                                     <p class="mb-0">Devinez le modèle à partir de l'image.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto 2">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Mode Progressif</h5>
                                     <p class="mb-0">L'image se dévoile petit à petit. Rapidité = Points !</p>
@@ -236,7 +237,7 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/scolaires/7 erreurs/7erreurs.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Jeu des 7 erreurs">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/7 erreurs/7erreurs.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Jeu des 7 erreurs">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Interactivité</h5>
                                     <p class="mb-0">Projet axé sur la gestion des événements JavaScript et la manipulation du DOM.</p>

@@ -1,4 +1,5 @@
 <?php
+$base_path = './';
 include '../includes/header.php';
 ?>
 
@@ -26,7 +27,7 @@ include '../includes/header.php';
         
         <!-- Generated Image Placeholder -->
         <div class="mb-4">
-             <img src="../assets/images/Conférences/Audace-2025/audace2025.jpeg" class="img-fluid rounded-4 shadow-lg w-100" alt="L'audace d'entreprendre 2025" style="max-height: 400px; object-fit: cover;">
+             <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace-2025/audace2025.jpeg" class="img-fluid rounded-4 shadow-lg w-100" alt="L'audace d'entreprendre 2025" style="max-height: 400px; object-fit: cover;">
         </div>
 
 
@@ -96,10 +97,10 @@ include '../includes/header.php';
         <div id="carouselCOD" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100" alt="COD 1" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100" alt="COD 1" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100" alt="COD 2" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100" alt="COD 2" style="max-height: 550px; object-fit: cover;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselCOD" data-bs-slide="prev">
@@ -134,10 +135,10 @@ include '../includes/header.php';
         <div id="carouselHornet" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/Conférences/Incyber/hornet1.jpeg" class="d-block w-100" alt="HornetSecurity 1" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet1.jpeg" class="d-block w-100" alt="HornetSecurity 1" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/Incyber/hornet2.jpeg" class="d-block w-100" alt="HornetSecurity 2" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet2.jpeg" class="d-block w-100" alt="HornetSecurity 2" style="max-height: 550px; object-fit: cover;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselHornet" data-bs-slide="prev">
@@ -185,21 +186,21 @@ include '../includes/header.php';
         <div id="carouselAudace" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/Conférences/Audace/Audace.jpg" class="d-block w-100" alt="Zenith" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace.jpg" class="d-block w-100" alt="Zenith" style="max-height: 550px; object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Zenith</h5>
                         <p class="mb-0">Le Salon de l'Audace d'Entreprendre s'est tenu le 1er octobre 2024 au Zénith de Dijon.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/Audace/Audace1.jpg" class="d-block w-100" alt="Plateau" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace1.jpg" class="d-block w-100" alt="Plateau" style="max-height: 550px; object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Plateau</h5>
                         <p class="mb-0">Durant le salon, plusieurs interviews ont eu lieu sur scène à côté des stands découverte de projet.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/Audace/Audace2.jpg" class="d-block w-100" alt="Scene" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace2.jpg" class="d-block w-100" alt="Scene" style="max-height: 550px; object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Scene</h5>
                         <p class="mb-0">Le plateau central a été le théâtre d'interviews captivantes avec des entrepreneurs visionnaires.</p>
@@ -243,10 +244,10 @@ include '../includes/header.php';
         <div id="carouselPGWScene" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100" alt="Grande Scene" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100" alt="Grande Scene" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100" alt="Xbox Scene" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100" alt="Xbox Scene" style="max-height: 550px; object-fit: cover;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselPGWScene" data-bs-slide="prev">
@@ -281,13 +282,13 @@ include '../includes/header.php';
         <div id="carouselCybertruck" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100" alt="Cybertruck 1" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100" alt="Cybertruck 1" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100" alt="Cybertruck 2" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100" alt="Cybertruck 2" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100" alt="Cybertruck 3" style="max-height: 550px; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100" alt="Cybertruck 3" style="max-height: 550px; object-fit: cover;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselCybertruck" data-bs-slide="prev">

@@ -1,4 +1,5 @@
 <?php
+$base_path = './';
 include '../includes/header.php';
 ?>
 
@@ -30,21 +31,21 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/perso/Thomas-Editor/Editor.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 1">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 1">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Montage Vidéo</h5>
                                     <p class="mb-0">Thomas Editor propose des services de montage vidéo abordables pour tous vos projets.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/perso/Thomas-Editor/Editor1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 2">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Créativité</h5>
                                     <p class="mb-0">Des montages dynamiques et adaptés à votre audience.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/perso/Thomas-Editor/Editor2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 3">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 3">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Qualité Pro</h5>
                                     <p class="mb-0">Un rendu professionnel pour mettre en valeur votre contenu.</p>
@@ -110,14 +111,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/perso/Game-Réduction/GR-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 1">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Game-Réduction/GR-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 1">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Économies</h5>
                                     <p class="mb-0">Une initiative visant à vous aider à économiser sur vos achats numériques.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/perso/Game-Réduction/GR-DA1.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Game-Réduction/GR-DA1.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 2">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Bons Plans</h5>
                                     <p class="mb-0">Accédez aux meilleures offres et réductions du moment.</p>
@@ -152,14 +153,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/perso/Tech-Hardware/Tech-Hardware-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 1">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Tech-Hardware/Tech-Hardware-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 1">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Conseils PC</h5>
                                     <p class="mb-0">Votre solution pour obtenir des conseils personnalisés sur l'achat de PC.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/perso/Tech-Hardware/PC.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Tech-Hardware/PC.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 2">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Optimisation</h5>
                                     <p class="mb-0">Tirez le meilleur parti de votre matériel informatique.</p>

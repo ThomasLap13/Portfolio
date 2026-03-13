@@ -12,13 +12,13 @@
         <div class="footer-section">
             <h4>Navigation</h4>
             <ul class="footer-links">
-                <a href="../public/index.php" class="footer-link">Accueil</a><br>
-                <a href="../public/a-propos.php" class="footer-link">À propos</a><br>
-                <a href="../public/projets-perso.php" class="footer-link">Projets Perso</a><br>
-                <a href="../public/projets-scolaires.php" class="footer-link">Projets Scolaires</a><br>
-                <a href="../public/evenements.php" class="footer-link">Événements</a><br>
-                <a href="../public/veille.php" class="footer-link">Veille Technologique</a><br>
-                <a href="../public/contact.php" class="footer-link">Contact</a><br>
+                <a href="<?php echo $base_path; ?>" class="footer-link">Accueil</a><br>
+                <a href="<?php echo $base_path; ?>a-propos" class="footer-link">À propos</a><br>
+                <a href="<?php echo $base_path; ?>projets-perso" class="footer-link">Projets Perso</a><br>
+                <a href="<?php echo $base_path; ?>projets-scolaires" class="footer-link">Projets Scolaires</a><br>
+                <a href="<?php echo $base_path; ?>evenements" class="footer-link">Événements</a><br>
+                <a href="<?php echo $base_path; ?>veille" class="footer-link">Veille Technologique</a><br>
+                <a href="<?php echo $base_path; ?>contact" class="footer-link">Contact</a><br>
             </ul>
         </div>
 
@@ -42,7 +42,7 @@
     </div>
 </footer>
 
-<script src="../assets/js/script.js"></script>
+<script src="<?php echo $base_path; ?>assets/js/script.js"></script>
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,5 +1,6 @@
 <?php
-include '../includes/header.php';
+$base_path = './';
+include './includes/header.php';
 ?>
 
 <head>
@@ -29,7 +30,7 @@ include '../includes/header.php';
                 <div class="card p-5 border-0 shadow-lg">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center mb-4 mb-md-0">
-                            <img src="../assets/images/da/PP.jpg" alt="Thomas Lapierre" class="img-fluid rounded-circle shadow-lg" style="width: 200px; height: 200px; object-fit: cover; border: 4px solid var(--primary-color);">
+                            <img src="./assets/images/da/PP.jpg" alt="Thomas Lapierre" class="img-fluid rounded-circle shadow-lg" style="width: 200px; height: 200px; object-fit: cover; border: 4px solid var(--primary-color);">
                         </div>
                         <div class="col-md-8">
                             <p class="fs-5 text-muted">
@@ -53,21 +54,21 @@ include '../includes/header.php';
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/formations/saint-benigne.jpg" class="d-block w-100" alt="Lycée Saint-Bénigne">
+                    <img src="./assets/images/formations/saint-benigne.jpg" class="d-block w-100" alt="Lycée Saint-Bénigne">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>BTS SIO</h5>
                         <p>Lycée Saint-Bénigne - Dijon</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/formations/saint-joseph.jpg" class="d-block w-100" alt="Lycée Saint-Joseph">
+                    <img src="./assets/images/formations/saint-joseph.jpg" class="d-block w-100" alt="Lycée Saint-Joseph">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>BAC PRO SN</h5>
                         <p>Lycée Saint-Joseph - Besançon</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/formations/victor-hugo.jpg" class="d-block w-100" alt="Collège Victor-Hugo">
+                    <img src="./assets/images/formations/victor-hugo.jpg" class="d-block w-100" alt="Collège Victor-Hugo">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Collège</h5>
                         <p>Victor-Hugo - Besançon</p>
@@ -93,45 +94,45 @@ include '../includes/header.php';
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 glass-card-hover">
-                    <img src="../assets/images/da/projets.jpg" class="card-img-top" alt="Projets" style="height: 200px; object-fit: cover;">
+                    <img src="./assets/images/da/projets.jpg" class="card-img-top" alt="Projets" style="height: 200px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><i class="fas fa-code me-2 text-primary"></i>Projets</h5>
                         <p class="card-text flex-grow-1">Découvrez mes réalisations professionnelles, personnelles et scolaires.</p>
                         <div class="d-flex justify-content-between mt-3 gap-2">
-                            <a href="../public/projets-perso.php" class="btn btn-sm btn-outline-light flex-grow-1">Perso</a>
-                            <a href="../public/projets-scolaires.php" class="btn btn-sm btn-outline-light flex-grow-1">Scolaire</a>
+                            <a href="<?php echo $base_path; ?>projets-perso" class="btn btn-sm btn-outline-light flex-grow-1">Perso</a>
+                            <a href="<?php echo $base_path; ?>projets-scolaires" class="btn btn-sm btn-outline-light flex-grow-1">Scolaire</a>
                         </div>
-                         <a href="../public/projets-entreprise.php" class="btn btn-sm btn-custom mt-2 w-100">Entreprise</a>
+                         <a href="<?php echo $base_path; ?>projets-entreprise" class="btn btn-sm btn-custom mt-2 w-100">Entreprise</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 glass-card-hover">
-                    <img src="../assets/images/da/evenements.jpg" class="card-img-top" alt="evenements" style="height: 200px; object-fit: cover;">
+                    <img src="./assets/images/da/evenements.jpg" class="card-img-top" alt="evenements" style="height: 200px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><i class="fas fa-calendar-alt me-2 text-primary"></i>Événements</h5>
                         <p class="card-text flex-grow-1">Retour sur les événements tech auxquels j'ai participé.</p>
-                        <a href="../public/evenements.php" class="btn btn-custom mt-3">Découvrir</a>
+                        <a href="<?php echo $base_path; ?>evenements" class="btn btn-custom mt-3">Découvrir</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 glass-card-hover">
-                    <img src="../assets/images/da/veilles.jpg" class="card-img-top" alt="veilles" style="height: 200px; object-fit: cover;">
+                    <img src="./assets/images/da/veilles.jpg" class="card-img-top" alt="veilles" style="height: 200px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><i class="fas fa-newspaper me-2 text-primary"></i>Veille Techno</h5>
                         <p class="card-text flex-grow-1">Ma sélection d'articles et de ressources pour rester à jour.</p>
-                        <a href="../public/veille.php" class="btn btn-custom mt-3">Lire</a>
+                        <a href="<?php echo $base_path; ?>veille" class="btn btn-custom mt-3">Lire</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 glass-card-hover">
-                    <img src="../assets/images/da/contact.jpg" class="card-img-top" alt="contact" style="height: 200px; object-fit: cover;">
+                    <img src="./assets/images/da/contact.jpg" class="card-img-top" alt="contact" style="height: 200px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><i class="fas fa-envelope me-2 text-primary"></i>Contact</h5>
                         <p class="card-text flex-grow-1">Une question ? Un projet ? N'hésitez pas à me contacter.</p>
-                        <a href="../public/contact.php" class="btn btn-custom mt-3">Me contacter</a>
+                        <a href="<?php echo $base_path; ?>contact" class="btn btn-custom mt-3">Me contacter</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +146,7 @@ include '../includes/header.php';
             <div class="col-md-4">
                 <div class="card h-100 glass-card-hover">
                     <div class="position-relative">
-                        <img src="../assets/images/stage-alternance/mm.jpg" class="card-img-top" alt="Micro-Mega" style="height: 200px; object-fit: cover;">
+                        <img src="./assets/images/stage-alternance/mm.jpg" class="card-img-top" alt="Micro-Mega" style="height: 200px; object-fit: cover;">
                         <div class="position-absolute top-0 end-0 m-3 badge bg-primary">En cours</div>
                     </div>
                     <div class="card-body">
@@ -162,7 +163,7 @@ include '../includes/header.php';
             </div>
             <div class="col-md-4">
                 <div class="card h-100 glass-card-hover">
-                    <img src="../assets/images/stage-alternance/adeo.jpg" class="card-img-top" alt="Adeo" style="height: 200px; object-fit: cover;">
+                    <img src="./assets/images/stage-alternance/adeo.jpg" class="card-img-top" alt="Adeo" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Stage - Adeo Informatique</h5>
                         <p class="card-text small mb-3">Stage de seconde en solutions informatiques pour PME.</p>
@@ -175,7 +176,7 @@ include '../includes/header.php';
             </div>
             <div class="col-md-4">
                 <div class="card h-100 glass-card-hover">
-                    <img src="../assets/images/stage-alternance/safran.jpg" class="card-img-top" alt="Safran" style="height: 200px; object-fit: cover;">
+                    <img src="./assets/images/stage-alternance/safran.jpg" class="card-img-top" alt="Safran" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Stage - Safran</h5>
                         <p class="card-text small mb-3">Stage de troisième chez un leader de l'électronique et de la défense.</p>
@@ -187,8 +188,8 @@ include '../includes/header.php';
     </div>
 </main>
 
-<script src="../assets/js/scroll.js"></script>
+<script src="./assets/js/scroll.js"></script>
 
 <?php
-include '../includes/footer.php';
+include './includes/footer.php';
 ?>

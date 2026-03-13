@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /Portfolio/
+
+# Si le fichier/dossier demandé n'existe pas physiquement
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# 1. Empêcher l'accès direct aux URLs avec .php ou /public/ (Redirection 301)
+# Redirige /Portfolio/page.php vers /Portfolio/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /Portfolio/(.+)\.php\ HTTP/
+RewriteRule ^(.+)\.php$ $1 [R=301,L]
+
+# Redirige /Portfolio/public/page vers /Portfolio/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /Portfolio/public/(.+)\ HTTP/
+RewriteRule ^public/(.+)$ $1 [R=301,L]
+
+# 2. Servir les fichiers .php à la racine en masquant l'extension
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# 3. Servir les fichiers du dossier public/ en masquant le dossier et l'extension
+RewriteCond %{DOCUMENT_ROOT}/Portfolio/public/$1.php -f
+RewriteRule ^(.+?)/?$ public/$1.php [L]

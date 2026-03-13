@@ -1,4 +1,5 @@
 <?php
+$base_path = './';
 include '../includes/header.php';
 ?>
 <head>
@@ -106,21 +107,21 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/projets/entreprise/mm-composants.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Composants">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-composants.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Composants">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Composants Haute Performance</h5>
                                     <p class="mb-0">Sélection rigoureuse : i7-13700K, RTX 4060 Ti.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/entreprise/mm-config.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Config">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-config.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Config">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Montage & Optimisation</h5>
                                     <p class="mb-0">Assemblage précis et configuration du BIOS.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/projets/entreprise/mm-cable.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Cable Management">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-cable.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Cable Management">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Cable Management</h5>
                                     <p class="mb-0">Flux d'air optimal et esthétique soignée.</p>

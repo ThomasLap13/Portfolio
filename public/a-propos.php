@@ -1,4 +1,5 @@
 <?php
+$base_path = './';
 include '../includes/header.php';
 ?>
 
@@ -35,7 +36,7 @@ include '../includes/header.php';
             <div class="col-lg-6 fade-in">
                 <div class="glass-card h-100 p-4 glass-card-hover">
                     <div class="text-center mb-4">
-                        <img src="../assets/images/formations/sisr.jpg" class="img-fluid rounded-4 shadow-lg mb-3" alt="Option SISR" style="height: 250px; object-fit: cover; width: 100%;">
+                        <img src="<?php echo $base_path; ?>assets/images/formations/sisr.jpg" class="img-fluid rounded-4 shadow-lg mb-3" alt="Option SISR" style="height: 250px; object-fit: cover; width: 100%;">
                         <h3 class="text-primary"><i class="fas fa-network-wired me-2"></i>Option SISR</h3>
                         <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill mb-2">Solutions d'Infrastructure, Systèmes et Réseaux</span>
                     </div>
@@ -54,7 +55,7 @@ include '../includes/header.php';
             <div class="col-lg-6 fade-in">
                 <div class="glass-card h-100 p-4 glass-card-hover">
                     <div class="text-center mb-4">
-                        <img src="../assets/images/formations/slam.jpg" class="img-fluid rounded-4 shadow-lg mb-3" alt="Option SLAM" style="height: 250px; object-fit: cover; width: 100%;">
+                        <img src="<?php echo $base_path; ?>assets/images/formations/slam.jpg" class="img-fluid rounded-4 shadow-lg mb-3" alt="Option SLAM" style="height: 250px; object-fit: cover; width: 100%;">
                         <h3 class="text-purple"><i class="fas fa-code me-2"></i>Option SLAM</h3>
                         <span class="badge bg-purple-subtle text-purple border border-purple-subtle rounded-pill mb-2">Solutions Logicielles et Applications Métiers</span>
                     </div>
