@@ -8,9 +8,155 @@ include '../includes/header.php';
 <main>
     <div class="container mt-5 mb-5">
         <div class="text-center mb-5">
-            <h1 class="display-4 fw-bold">Projets Entreprise</h1>
-            <p class="lead text-muted">Mes réalisations et missions effectuées chez Micro-Méga (Coltene).</p>
+            <h1 class="display-4 fw-bold text-gradient">Expérience en Alternance</h1>
+            <p class="lead text-muted">Missions stratégiques et projets d'infrastructure chez Micro-Méga (Groupe Coltene).</p>
         </div>
+
+        <!-- Section Phare : Transformation Digitale & IA -->
+        <section class="mb-5" id="transformation-ia">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="card p-5 border-0 shadow-lg glass-card overflow-hidden position-relative">
+                        <div class="position-absolute top-0 end-0 p-4 opacity-10">
+                            <i class="fas fa-brain fa-10x"></i>
+                        </div>
+                        
+                        <div class="row align-items-center position-relative">
+                            <div class="col-lg-7">
+                                <div class="badge bg-primary mb-3">2026</div>
+                                <h2 class="display-5 fw-bold mb-4">Mise en place de la Formation IA</h2>
+                                <p class="lead text-white border-start border-primary border-4 ps-4 mb-4">
+                                    "Accompagner la mutation technologique de l'entreprise vers l'intelligence artificielle générative."
+                                </p>
+                                <p class="text-muted">
+                                    En tant qu'alternant, j'ai eu l'opportunité de piloter l'introduction des outils d'IA (Microsoft Copilot, Gemini) au sein des services administratifs et techniques. Ma mission ne s'est pas limitée à l'aspect technique, mais a couvert tout l'aspect pédagogique et organisationnel.
+                                </p>
+                                
+                                <div class="row g-3 mt-2">
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-graduation-cap text-primary me-2"></i>
+                                            <span class="small">Acculturation des équipes</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-shield-alt text-primary me-2"></i>
+                                            <span class="small">RGPD & Sécurité des données</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-cogs text-primary me-2"></i>
+                                            <span class="small">Automatisation de process</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-chart-line text-primary me-2"></i>
+                                            <span class="small">Gain de productivité mesuré</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_mockup.png" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25" alt="IA Dashboard">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Roadmap IT 2026 -->
+        <section class="mb-5" id="roadmap-it">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold"><i class="fas fa-tasks me-2 text-primary"></i>Roadmap IT 2026</h3>
+                <p class="text-muted">Planification stratégique des infrastructures et de la cybersécurité.</p>
+            </div>
+            
+            <div class="card border-0 glass-card p-0 overflow-hidden shadow-lg mb-5">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 align-middle">
+                        <thead class="bg-primary bg-opacity-10">
+                            <tr>
+                                <th class="ps-4 py-3">Projet Parent</th>
+                                <th class="py-3">Missions / Projet Enfant</th>
+                                <th class="py-3 text-center">Priorité</th>
+                                <th class="py-3">Échéance</th>
+                                <th class="py-3">Status</th>
+                                <th class="pe-4 py-3">Remarques</th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-top-0">
+                            <!-- WIFI -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-wifi text-primary me-2"></i>WIFI</td>
+                                <td>Couverture du site</td>
+                                <td class="text-center"><span class="badge bg-warning text-dark px-2">Moyen (B2)</span></td>
+                                <td>15/04/2026</td>
+                                <td><span class="badge border border-secondary text-secondary">À faire</span></td>
+                                <td class="pe-4 small text-muted">-</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-wifi text-primary me-2"></i>WIFI</td>
+                                <td>Renforcement Sécurité</td>
+                                <td class="text-center"><span class="badge bg-success px-2">Facile (A2)</span></td>
+                                <td>15/03/2026</td>
+                                <td><span class="badge bg-info text-dark">En cours</span></td>
+                                <td class="pe-4 small text-muted">-</td>
+                            </tr>
+                            <!-- SQL -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-database text-info me-2"></i>Serveur SQL 002</td>
+                                <td>Maintenance & Sauvegarde</td>
+                                <td class="text-center"><span class="badge bg-success px-2">Facile (A1)</span></td>
+                                <td>15/03/2026</td>
+                                <td><span class="badge border border-secondary text-secondary">À faire</span></td>
+                                <td class="pe-4 small text-muted">Plan A1 Prioritaire</td>
+                            </tr>
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-database text-info me-2"></i>Serveur SQL 002</td>
+                                <td>Archive & PRA</td>
+                                <td class="text-center"><span class="badge bg-warning text-dark px-2">Moyen (B3)</span></td>
+                                <td>15/07/2026</td>
+                                <td><span class="badge border border-secondary text-secondary">À faire</span></td>
+                                <td class="pe-4 small text-muted">Plan de reprise d'activité</td>
+                            </tr>
+                            <!-- Réseau -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-shield-alt text-danger me-2"></i>CyberSécurité</td>
+                                <td>Nouveau Firewall & Switches</td>
+                                <td class="text-center"><span class="badge bg-danger px-2">Dur (C3)</span></td>
+                                <td>30/09/2026</td>
+                                <td><span class="badge border border-secondary text-secondary">À faire</span></td>
+                                <td class="pe-4 small text-muted">Configuration infra cœur</td>
+                            </tr>
+                            <!-- Production -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-industry text-warning me-2"></i>Production</td>
+                                <td>Sérialisation (OS & Postes)</td>
+                                <td class="text-center"><span class="badge bg-danger px-2">Dur (C2)</span></td>
+                                <td>31/12/2026</td>
+                                <td><span class="badge border border-secondary text-secondary">À faire</span></td>
+                                <td class="pe-4 small text-muted">Postes ZAC compatibles W11 ?</td>
+                            </tr>
+                            <!-- Programmation -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-code text-primary me-2"></i>Parc IT</td>
+                                <td>Migration W11 (PC Yann)</td>
+                                <td class="text-center"><span class="badge bg-danger px-2">Dur (C2)</span></td>
+                                <td>15/07/2026</td>
+                                <td><span class="badge bg-info text-dark">En cours</span></td>
+                                <td class="pe-4 small text-muted">PC de programmation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5 opacity-25">
 
         <!-- Tri du NAS -->
         <section class="mb-5" id="tri-nas">
@@ -29,7 +175,7 @@ include '../includes/header.php';
                         
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <h4 class="text-primary mb-3">Le Défi</h4>
+                                <h4 class="text-primary mb-3">Le Défis</h4>
                                 <p class="text-muted">
                                     L'entreprise faisait face à une saturation de son espace de stockage (NAS) et à une désorganisation des données accumulées sur plusieurs années. Les temps d'accès étaient lents et les sauvegardes prenaient trop de temps.
                                 </p>
