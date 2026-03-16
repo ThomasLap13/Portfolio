@@ -28,6 +28,11 @@ if (!isset($base_path)) {
 </head>
 
 <body>
+    <div class="bg-blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">

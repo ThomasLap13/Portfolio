@@ -41,7 +41,7 @@ $age = $diff->y;
                 <div class="card p-5 h-100">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center mb-4 mb-md-0">
-                            <img src="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" alt="Thomas Lapierre" class="img-fluid rounded-4 shadow-lg mb-3" style="width: 180px; height: 180px; object-fit: cover;">
+                            <img src="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" alt="Thomas Lapierre" class="img-fluid rounded-4 shadow-lg mb-3" style="width: 180px; height: 180px; object-fit: cover;" loading="lazy" decoding="async">
                         </div>
                         <div class="col-md-8">
                             <h3 class="h4 mb-3">Bonjour, c'est Thomas.</h3>
@@ -58,7 +58,7 @@ $age = $diff->y;
                     <h5 class="mb-3 text-primary"><i class="fas fa-graduation-cap me-2"></i>Formation</h5>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-shrink-0">
-                            <img src="./assets/images/formations/saint-benigne.jpg" class="rounded-circle" style="width:50px; height:50px; object-fit:cover;">
+                            <img src="./assets/images/formations/saint-benigne.jpg" class="rounded-circle" style="width:50px; height:50px; object-fit:cover;" loading="lazy" decoding="async">
                         </div>
                         <div class="ms-3">
                             <h6 class="mb-0">BTS SIO (SISR)</h6>
@@ -67,7 +67,7 @@ $age = $diff->y;
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                            <img src="./assets/images/formations/saint-joseph.jpg" class="rounded-circle" style="width:50px; height:50px; object-fit:cover;">
+                            <img src="./assets/images/formations/saint-joseph.jpg" class="rounded-circle" style="width:50px; height:50px; object-fit:cover;" loading="lazy" decoding="async">
                         </div>
                         <div class="ms-3">
                             <h6 class="mb-0">BAC PRO SN</h6>
@@ -111,7 +111,7 @@ $age = $diff->y;
         
         <div class="bento-grid">
             <div class="card bento-large glass-card-hover group">
-                <img src="./assets/images/da/projets.jpg" class="card-img" alt="Projets" style="object-fit: cover; opacity: 0.3;">
+                <img src="./assets/images/da/projets.jpg" class="card-img" alt="Projets" style="object-fit: cover; opacity: 0.3;" loading="lazy" decoding="async">
                 <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
                     <h3 class="h2 fw-bold text-white mb-2">Mes Projets</h3>
                     <p class="text-white text-opacity-75 mb-4">Découvrez mes réalisations techniques.</p>
@@ -193,7 +193,7 @@ $age = $diff->y;
             <div class="col-md-4">
                 <div class="card glass-card-hover">
                     <div class="position-relative">
-                        <img src="./assets/images/stage-alternance/safran.jpg" class="card-img-top" alt="Safran" style="height: 180px; object-fit: cover;">
+                        <img src="./assets/images/stage-alternance/safran.jpg" class="card-img-top" alt="Safran" style="height: 180px; object-fit: cover;" loading="lazy" decoding="async">
                         <span class="position-absolute top-0 end-0 m-3 badge rounded-pill bg-secondary shadow-sm">Stage</span>
                     </div>
                     <div class="card-body p-4">

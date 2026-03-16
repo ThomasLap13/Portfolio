@@ -37,7 +37,7 @@ include '../includes/header.php';
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_logo.png" class="d-block w-100" style="height: 500px; object-fit: contain; background: #000;" alt="SlapIA Branding">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_logo.png" class="d-block w-100" style="height: 500px; object-fit: contain; background: #000;" alt="SlapIA Branding" loading="lazy" decoding="async">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Branding & Identité</h5>
                                     <p class="mb-0">Une approche moderne de l'apprentissage technologique.</p>
@@ -177,7 +177,7 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 1">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 1" loading="lazy" decoding="async">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Montage Vidéo</h5>
                                     <p class="mb-0">Thomas Editor propose des services de montage vidéo abordables pour tous vos projets.</p>
@@ -306,7 +306,7 @@ include '../includes/header.php';
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Tech-Hardware/PC.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Tech-Hardware/PC.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 2" loading="lazy" decoding="async">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Optimisation</h5>
                                     <p class="mb-0">Tirez le meilleur parti de votre matériel informatique.</p>

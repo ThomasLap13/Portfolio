@@ -111,10 +111,10 @@ include $base_path . 'includes/header.php';
                 <div id="carouselCOD" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100 carousel-img-standard" alt="InCyber 1">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100 carousel-img-standard" alt="InCyber 1" loading="lazy" decoding="async">
                         </div>
                         <div class="carousel-item">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100 carousel-img-standard" alt="InCyber 2">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100 carousel-img-standard" alt="InCyber 2" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselCOD" data-bs-slide="prev">
@@ -265,7 +265,7 @@ include $base_path . 'includes/header.php';
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
                                     <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
-                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
+                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;" loading="lazy" decoding="async"></div>
                                 </div>
                              </div>
                         </div>
