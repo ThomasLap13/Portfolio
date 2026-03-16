@@ -51,20 +51,66 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     });
+    // 4. Mouse Glow Effect
+    const glow = document.createElement("div");
+    glow.className = "mouse-glow";
+    document.body.appendChild(glow);
+
+    window.addEventListener("mousemove", (e) => {
+        gsap.to(glow, {
+            x: e.clientX,
+            y: e.clientY,
+            duration: 0.8,
+            ease: "power2.out"
+        });
+    });
+
+    // 5. GSAP Animations on Scroll
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Fade in sections
+    gsap.utils.toArray('.hidden').forEach(section => {
+        gsap.to(section, {
+            scrollTrigger: {
+                trigger: section,
+                start: "top 85%",
+                toggleActions: "play none none none"
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out"
+        });
+    });
+
+    // Hero Entry Animation
+    gsap.from(".hero-content > *", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power4.out",
+        delay: 0.5
+    });
 });
 
-// Fonction pour masquer l'écran de bienvenue
+// Logic for screen welcome
 function hideWelcome() {
-    const section = document.getElementById("hidden");
     const welcomeScreen = document.getElementById("welcomeScreen");
+    if (!welcomeScreen) return;
 
-    if (!section || !welcomeScreen) return;
+    gsap.to(welcomeScreen, {
+        y: "-100vh",
+        duration: 1.2,
+        ease: "expo.inOut",
+        onComplete: () => {
+            welcomeScreen.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    });
 
-    section.classList.remove("hidden");
-    welcomeScreen.style.opacity = "0";
-    setTimeout(() => {
-        welcomeScreen.style.display = "none";
-    }, 800);
-
-    section.scrollIntoView({ behavior: "smooth" });
+    const firstSection = document.getElementById("a-propos");
+    if (firstSection) {
+        firstSection.scrollIntoView({ behavior: "smooth" });
+    }
 }
