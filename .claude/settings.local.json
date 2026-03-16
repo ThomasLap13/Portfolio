@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"c:/Users/thoma/SynologyDrive/Documents/Projets/Portfolio/sitemap.xml\":*)",
+      "Bash(\"c:/Users/thoma/SynologyDrive/Documents/Projets/Portfolio/assets/docs/README.md\")"
+    ]
+  }
+}

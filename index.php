@@ -87,6 +87,9 @@ $age = $diff->y;
                         <div class="col-md-8">
                             <p class="text-primary small fw-bold text-uppercase mb-1 tracking-wide" style="letter-spacing:2px;">Bonjour, c'est</p>
                             <h3 class="h3 fw-bold mb-2">Thomas Lapierre</h3>
+                            <div class="quote-block mb-3">
+                                "Transformer une infrastructure chaotique en un système fiable, documenté et sécurisé — c'est ça qui me motive."
+                            </div>
                             <p class="text-muted mb-3">
                                 <?php echo $age; ?> ans · Étudiant <strong class="text-white">BTS SIO (SISR)</strong> à Dijon.<br>
                                 Mon univers ? L'administration système, le réseau et la sécurité informatique.
@@ -167,6 +170,96 @@ $age = $diff->y;
                 <i class="fas fa-server stat-icon"></i>
                 <span class="stat-number" data-counter data-target="2" data-suffix=" To">0</span>
                 <span class="stat-label">Espace libéré NAS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════ -->
+    <!-- COMPÉTENCES                        -->
+    <!-- ══════════════════════════════════ -->
+    <section class="container mt-5 hidden">
+        <h2 class="section-title">Compétences</h2>
+
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+                <div class="card p-4 h-100">
+                    <h5 class="text-primary mb-4"><i class="fas fa-layer-group me-2"></i>Stack technique</h5>
+                    <p class="text-muted small mb-4">
+                        Formé sur des environnements réels en alternance chez Micro-Méga, mes compétences couvrent l'ensemble de la chaîne système &amp; réseau — du câble au cloud.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-tag"><i class="fab fa-windows me-1"></i>Windows Server</span>
+                        <span class="skill-tag"><i class="fab fa-linux me-1"></i>Linux Debian</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired me-1"></i>Cisco</span>
+                        <span class="skill-tag"><i class="fas fa-cloud me-1"></i>Azure</span>
+                        <span class="skill-tag"><i class="fab fa-docker me-1"></i>Docker</span>
+                        <span class="skill-tag"><i class="fas fa-shield-alt me-1"></i>Cybersécurité</span>
+                        <span class="skill-tag"><i class="fas fa-robot me-1"></i>n8n</span>
+                        <span class="skill-tag"><i class="fab fa-php me-1"></i>PHP</span>
+                        <span class="skill-tag"><i class="fas fa-terminal me-1"></i>PowerShell</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt me-1"></i>Git / CI-CD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-windows text-primary"></i>Windows Server / AD</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-network-wired text-primary"></i>Réseau / Cisco IOS</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-linux text-primary"></i>Linux (Debian / Ubuntu)</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-cloud text-primary"></i>Azure / Entra ID</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-shield-alt text-primary"></i>Cybersécurité</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-docker text-primary"></i>Docker / Conteneurisation</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="67"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-terminal text-primary"></i>PowerShell / Scripting</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="71"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-robot text-primary"></i>n8n / Automatisation IA</span>
+                            <span class="skill-pct">0%</span>
+                        </div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

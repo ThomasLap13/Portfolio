@@ -4,16 +4,54 @@ if (!isset($base_path)) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Thomas Lapierre, étudiant en BTS SIO option SISR, passionné par le réseau, l'administration système et la cybersécurité.">
-    <meta property="og:title" content="Thomas Lapierre — Portfolio">
-    <meta property="og:description" content="Découvrez mon univers, mes projets et mes expériences en IT et Réseau.">
+
+    <!-- SEO -->
+    <meta name="description" content="Portfolio de Thomas Lapierre — BTS SIO SISR, Administrateur Réseau & Système, passionné par la cybersécurité et l'infrastructure IT.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Thomas Lapierre">
+    <meta name="keywords" content="Thomas Lapierre, BTS SIO SISR, Administrateur réseau, Cybersécurité, Azure, Docker, Linux, Portfolio">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Thomas Lapierre — Portfolio IT">
+    <meta property="og:description" content="Administrateur Système & Réseau · BTS SIO SISR · Dijon">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://synologynasthomas.synology.me/">
     <meta property="og:image" content="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Structured Data (Person) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Thomas Lapierre",
+      "url": "https://synologynasthomas.synology.me/",
+      "image": "https://www.slapia.com/assets/img/Thomas-Lapierre.jpg",
+      "jobTitle": "Administrateur Système & Réseau (en formation)",
+      "description": "Étudiant BTS SIO SISR, alternant chez Micro-Méga, passionné par l'infrastructure IT et la cybersécurité.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dijon", "addressCountry": "FR" },
+      "sameAs": [
+        "https://www.linkedin.com/in/lapierre-thomas/",
+        "https://github.com/ThomasLap13",
+        "https://linktr.ee/thomas.lapierre"
+      ]
+    }
+    </script>
+
+    <!-- PWA -->
+    <link rel="manifest" href="<?php echo $base_path; ?>manifest.json">
+    <meta name="theme-color" content="#0b1a12">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Theme flash prevention (must be inline + first) -->
+    <script>
+        (function(){var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;})();
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,8 +112,27 @@ if (!isset($base_path)) {
                         </li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>evenements">Événements</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>veille">Veille Tech</a></li>
+
+                        <!-- CV Download -->
+                        <li class="nav-item ms-lg-1">
+                            <a href="<?php echo $base_path; ?>assets/docs/cv.pdf" download class="btn-cv">
+                                <i class="fas fa-download"></i> CV
+                            </a>
+                        </li>
+
+                        <!-- Dark/Light Toggle -->
+                        <li class="nav-item ms-lg-1">
+                            <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème">
+                                <i id="theme-icon-sun"  class="fas fa-sun"></i>
+                                <i id="theme-icon-moon" class="fas fa-moon" style="display:none;"></i>
+                            </button>
+                        </li>
+
+                        <!-- CTA Contact -->
                         <li class="nav-item ms-lg-2">
-                            <a class="btn btn-custom btn-sm magnetic-btn" href="<?php echo $base_path; ?>contact">Me contacter</a>
+                            <a class="btn btn-custom btn-sm magnetic-btn" href="<?php echo $base_path; ?>contact">
+                                Me contacter
+                            </a>
                         </li>
                     </ul>
                 </div>
