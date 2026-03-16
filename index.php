@@ -79,6 +79,31 @@ $age = $diff->y;
         </div>
     </div>
 
+    <!-- Tools Slider -->
+    <div class="mt-5 mb-5 hidden" id="tech-stack">
+        <div class="tools-marquee">
+            <div class="marquee-content">
+                <!-- Items repeated twice for seamless loop -->
+                <div class="tool-item"><i class="fab fa-windows"></i> Windows Server</div>
+                <div class="tool-item"><i class="fab fa-linux"></i> Linux (Debian)</div>
+                <div class="tool-item"><i class="fas fa-network-wired"></i> Cisco IOS</div>
+                <div class="tool-item"><i class="fab fa-docker"></i> Docker</div>
+                <div class="tool-item"><i class="fas fa-shield-alt"></i> Cybersécurité</div>
+                <div class="tool-item"><i class="fas fa-cloud"></i> Azure</div>
+                <div class="tool-item"><i class="fas fa-database"></i> SQL Server</div>
+                <div class="tool-item"><i class="fab fa-php"></i> PHP / MySQL</div>
+                <div class="tool-item"><i class="fab fa-windows"></i> Windows Server</div>
+                <div class="tool-item"><i class="fab fa-linux"></i> Linux (Debian)</div>
+                <div class="tool-item"><i class="fas fa-network-wired"></i> Cisco IOS</div>
+                <div class="tool-item"><i class="fab fa-docker"></i> Docker</div>
+                <div class="tool-item"><i class="fas fa-shield-alt"></i> Cybersécurité</div>
+                <div class="tool-item"><i class="fas fa-cloud"></i> Azure</div>
+                <div class="tool-item"><i class="fas fa-database"></i> SQL Server</div>
+                <div class="tool-item"><i class="fab fa-php"></i> PHP / MySQL</div>
+            </div>
+        </div>
+    </div>
+
     <div style="min-height: 100px;"></div>
 
     <div class="container mt-5 hidden" id="offres"> <!-- Sommaire Bento -->

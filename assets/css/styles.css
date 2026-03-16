@@ -426,6 +426,55 @@ footer {
     transform: translateY(0);
 }
 
+/* Marquee Tools */
+.tools-marquee {
+    overflow: hidden;
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    backdrop-filter: blur(5px);
+}
+
+.marquee-content {
+    display: flex;
+    gap: 4rem;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.tool-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.tool-item:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.tool-item:hover i {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50% - 2rem)); }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
