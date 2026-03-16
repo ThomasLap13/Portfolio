@@ -49,13 +49,8 @@ if (!isset($base_path)) {
                                 <li><a class="dropdown-item" href="<?php echo $base_path; ?>projets-entreprise">Projets Entreprise</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Voir-Plus</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="<?php echo $base_path; ?>evenements">Événements</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $base_path; ?>veille">Veille Technologique</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>evenements">Événements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>veille">Veille Technologique</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>contact">Contact</a></li>
                     </ul>
                 </div>

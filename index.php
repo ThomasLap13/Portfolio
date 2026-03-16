@@ -1,6 +1,11 @@
 <?php
 $base_path = './';
 include './includes/header.php';
+
+$dateNaissance = "2006-06-13";
+$aujourdhui = date("Y-m-d");
+$diff = date_diff(date_create($dateNaissance), date_create($aujourdhui));
+$age = $diff->y;
 ?>
 
 <head>
@@ -34,7 +39,7 @@ include './includes/header.php';
                         </div>
                         <div class="col-md-8">
                             <p class="fs-5 text-muted">
-                                Bonjour, je m'appelle <strong class="text-white">Thomas Lapierre</strong>, j'ai 18 ans et je suis basé à Besançon.
+                                Bonjour, je m'appelle <strong class="text-white">Thomas Lapierre</strong>, j'ai <?php echo $age; ?> ans et je suis basé à Besançon.
                                 <br><br>
                                 Actuellement étudiant en <strong>BTS Services Informatiques aux Organisations (SIO)</strong> au Lycée Saint-Bénigne à Dijon, je me spécialise dans les solutions d'infrastructure, systèmes et réseaux (SISR).
                                 <br><br>
