@@ -40,7 +40,7 @@ include $base_path . 'includes/header.php';
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionAudace2025">
-                                    <div class="accordion-body bg-white bg-opacity-5 rounded-4 mt-2 p-4">
+                                    <div class="accordion-body glass-item rounded-4 mt-2 p-4">
                                         Exploration de l’écosystème French Tech BFC, crucial pour un étudiant BTS SIO souhaitant lancer une solution SaaS ou Cloud. Compréhension des leviers d'incubation, mentors et financements précoces.
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ include $base_path . 'includes/header.php';
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionAudace2025">
-                                    <div class="accordion-body bg-white bg-opacity-5 rounded-4 mt-2 p-4">
+                                    <div class="accordion-body glass-item rounded-4 mt-2 p-4">
                                         Mobilisation concrète de l’IA (scoring, automatisation) et impact sur l'infrastructure. Focus sur les besoins en data, API et cybersécurité pour les systèmes financiers.
                                     </div>
                                 </div>
@@ -108,13 +108,13 @@ include $base_path . 'includes/header.php';
         
         <div class="row g-4 mb-4">
             <div class="col-lg-7">
-                <div id="carouselCOD" class="carousel slide shadow-lg rounded-4 overflow-hidden h-100" data-bs-ride="carousel">
-                    <div class="carousel-inner h-100">
-                        <div class="carousel-item active h-100">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100 h-100 carousel-img-standard" alt="InCyber 1">
+                <div id="carouselCOD" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100 carousel-img-standard" alt="InCyber 1">
                         </div>
-                        <div class="carousel-item h-100">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100 h-100 carousel-img-standard" alt="InCyber 2">
+                        <div class="carousel-item">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100 carousel-img-standard" alt="InCyber 2">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselCOD" data-bs-slide="prev">
@@ -126,7 +126,7 @@ include $base_path . 'includes/header.php';
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="card p-4 h-100">
+                <div class="card p-4 h-100 glass-item">
                     <h4 class="text-primary mb-3">L'Europe de la Cyber</h4>
                     <p class="text-muted fs-5">
                         L'un des plus grands salons dédiés à la cybersécurité en Europe. Une immersion totale entre défense et attaque numérique.
@@ -146,12 +146,12 @@ include $base_path . 'includes/header.php';
 
         <div class="row g-4">
             <div class="col-md-6">
-                <div class="card p-4 h-100">
+                <div class="card p-4 h-100 glass-item">
                     <h5 class="text-primary mb-3"><i class="fas fa-store me-2"></i>Incursions sur les stands</h5>
                     <div class="row g-3">
-                        <div class="col-12 px-2 py-1"><div class="p-3 bg-white bg-opacity-5 rounded-4 border-start border-primary border-4"><strong>Stand Orange & Cisco :</strong> Présentation de solutions de cybersécurité complètes (protection réseaux, mobiles, données cloud). Réflexion sur la double barrière de sécurité physique et virtuelle.</div></div>
-                        <div class="col-12 px-2 py-1"><div class="p-3 bg-white bg-opacity-5 rounded-4 border-start border-primary border-4"><strong>Stand Free Pro :</strong> Démonstration d'outils performants comme l'EDR (Endpoint Detection and Response) et le SIEM (Security Information and Event Management) pour la gestion avancée des logs.</div></div>
-                        <div class="col-12 px-2 py-1"><div class="p-3 bg-white bg-opacity-5 rounded-4 border-start border-primary border-4"><strong>Stands Google & Cloudflare :</strong> Focus sur l'intégration massive de l'IA dans la cybersécurité et l'approche Cloud pour la protection des applications web.</div></div>
+                        <div class="col-12 px-2 py-1"><div class="p-3 glass-item rounded-4 border-start border-primary border-4"><strong>Stand Orange & Cisco :</strong> Présentation de solutions de cybersécurité complètes (protection réseaux, mobiles, données cloud). Réflexion sur la double barrière de sécurité physique et virtuelle.</div></div>
+                        <div class="col-12 px-2 py-1"><div class="p-3 glass-item rounded-4 border-start border-primary border-4"><strong>Stand Free Pro :</strong> Démonstration d'outils performants comme l'EDR (Endpoint Detection and Response) et le SIEM (Security Information and Event Management) pour la gestion avancée des logs.</div></div>
+                        <div class="col-12 px-2 py-1"><div class="p-3 glass-item rounded-4 border-start border-primary border-4"><strong>Stands Google & Cloudflare :</strong> Focus sur l'intégration massive de l'IA dans la cybersécurité et l'approche Cloud pour la protection des applications web.</div></div>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@ include $base_path . 'includes/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="card p-4">
+                <div class="card p-4 glass-item">
                     <h5 class="text-primary mb-3"><i class="fas fa-graduation-cap me-2"></i>Vision Professionnelle</h5>
                     <ul class="list-unstyled small text-muted">
                         <li class="mb-2"><strong>Tendances :</strong> Intelligence Artificielle appliquée à la détection proactive de menaces.</li>
@@ -197,7 +197,7 @@ include $base_path . 'includes/header.php';
         <div class="card border-0 overflow-hidden mb-4 bg-transparent">
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card h-100 p-4 d-flex flex-column justify-content-center">
+                    <div class="card h-100 p-4 d-flex flex-column justify-content-center glass-item">
                         <p class="fs-5 text-muted mb-0 italic">
                             "Un événement phare dédié à l'innovation and au partage d'idées novatrices, transformant le Zénith de Dijon en hub entrepreneurial."
                         </p>
@@ -239,25 +239,25 @@ include $base_path . 'includes/header.php';
 
             <div class="row g-4">
                 <div class="col-lg-8">
-                     <div id="carouselPGWScene" class="carousel slide shadow-lg rounded-4 overflow-hidden h-100" data-bs-ride="carousel">
-                        <div class="carousel-inner h-100">
-                            <div class="carousel-item active h-100">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100 h-100 carousel-img-standard" alt="PGW 1">
+                     <div id="carouselPGWScene" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100 carousel-img-standard" alt="PGW 1">
                             </div>
-                            <div class="carousel-item h-100">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100 h-100 carousel-img-standard" alt="PGW 2">
+                            <div class="carousel-item">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100 carousel-img-standard" alt="PGW 2">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card p-4 h-100">
+                    <div class="card p-4 h-100 glass-item">
                         <h4 style="color: #6f42c1;" class="mb-3">Divertissement & High-Tech</h4>
                         <p class="text-muted small">
                             L'un des plus grands salons dédiés aux jeux vidéo en Europe. Focus sur les performances matérielles and le développement graphique poussé.
                         </p>
                         <div class="mt-4">
-                             <div class="p-3 bg-white bg-opacity-5 rounded-4 mb-3 border border-white border-opacity-10">
+                             <div class="p-3 glass-item rounded-4 mb-3">
                                 <h6 class="fw-bold"><i class="fas fa-truck-pickup me-2"></i>Inédit !</h6>
                                 <p class="small text-muted mb-0">Découverte exclusive du Tesla Cybertruck sur place.</p>
                              </div>
@@ -273,7 +273,7 @@ include $base_path . 'includes/header.php';
                 </div>
             </div>
             
-            <div class="card p-4 mt-4">
+            <div class="card p-4 mt-4 glass-item">
                 <h5 style="color: #6f42c1;" class="mb-3">Ce que retient un profil IT :</h5>
                 <div class="row g-3 text-muted small">
                     <div class="col-md-6 border-start border-purple ps-3" style="border-left: 3px solid #6f42c1 !important;"><strong>Optimisation logicielle:</strong> Observation des performances graphiques and moteurs de rendu de dernière génération.</div>

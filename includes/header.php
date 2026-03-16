@@ -13,7 +13,7 @@ if (!isset($base_path)) {
     <meta property="og:description" content="Découvrez mon univers, mes projets et mes expériences en IT et Réseau.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://synologynasthomas.synology.me/">
-    <meta property="og:image" content="https://synologynasthomas.synology.me/assets/images/da/PP.jpg">
+    <meta property="og:image" content="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -24,7 +24,7 @@ if (!isset($base_path)) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@450&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="<?php echo $base_path; ?>assets/images/da/PP.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -32,7 +32,7 @@ if (!isset($base_path)) {
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo $base_path; ?>index.php">
-                    <img src="<?php echo $base_path; ?>assets/images/da/PP.jpg" alt="Logo Thomas" height="50" loading="lazy">
+                    <img src="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" alt="Logo Thomas" height="50" loading="lazy" class="rounded-circle">
                 </a>            
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>

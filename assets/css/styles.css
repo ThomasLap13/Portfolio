@@ -278,7 +278,6 @@ a {
     box-shadow: var(--glass-shadow);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     overflow: hidden;
-    height: 100%;
 }
 
 .card:hover {
@@ -477,14 +476,20 @@ footer {
 
 /* Carousel Standardization */
 .carousel-img-standard {
-    height: 400px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
 }
 
+.glass-item {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
 @media (max-width: 768px) {
     .carousel-img-standard {
-        height: 250px;
+        height: 250px !important;
     }
 }
 

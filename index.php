@@ -41,7 +41,7 @@ $age = $diff->y;
                 <div class="card p-5 h-100">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center mb-4 mb-md-0">
-                            <img src="./assets/images/da/PP.jpg" alt="Thomas Lapierre" class="img-fluid rounded-4 shadow-lg mb-3" style="width: 180px; height: 180px; object-fit: cover;">
+                            <img src="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" alt="Thomas Lapierre" class="img-fluid rounded-4 shadow-lg mb-3" style="width: 180px; height: 180px; object-fit: cover;">
                         </div>
                         <div class="col-md-8">
                             <h3 class="h4 mb-3">Bonjour, c'est Thomas.</h3>
@@ -111,7 +111,7 @@ $age = $diff->y;
         
         <div class="bento-grid">
             <div class="card bento-large glass-card-hover group">
-                <img src="./assets/images/da/projets.jpg" class="card-img" alt="Projets" style="height: 100%; object-fit: cover; opacity: 0.3;">
+                <img src="./assets/images/da/projets.jpg" class="card-img" alt="Projets" style="object-fit: cover; opacity: 0.3;">
                 <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
                     <h3 class="h2 fw-bold text-white mb-2">Mes Projets</h3>
                     <p class="text-white text-opacity-75 mb-4">Découvrez mes réalisations techniques.</p>
