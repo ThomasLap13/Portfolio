@@ -12,6 +12,8 @@ if (!isset($base_path)) {
     <meta property="og:title" content="Thomas Lapierre - Portfolio">
     <meta property="og:description" content="Découvrez mon univers, mes projets et mes expériences en IT et Réseau.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://synologynasthomas.synology.me/">
+    <meta property="og:image" content="https://synologynasthomas.synology.me/assets/images/da/PP.jpg">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
