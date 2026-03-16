@@ -1,23 +1,34 @@
 RewriteEngine On
 RewriteBase /
 
-# Si le fichier/dossier demandé n'existe pas physiquement
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# --- 1) Redirections SEO (doivent être AVANT les tests -f/-d) ---
 
-# 1. Empêcher l'accès direct aux URLs avec .php ou /public/ (Redirection 301)
-# Redirige /page.php vers /page
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.php\ HTTP/
-RewriteRule ^(.+)\.php$ $1 [R=301,L]
+# /public/page  ->  /page (301)
+RewriteCond %{THE_REQUEST} \s/+public/([^\s]+)\s [NC]
+RewriteRule ^public/(.+)$ /$1 [R=301,L]
 
-# Redirige /public/page vers /page
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /public/(.+)\ HTTP/
-RewriteRule ^public/(.+)$ $1 [R=301,L]
+# /page.php  ->  /page (301)
+RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.php[\s?] [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
 
-# 2. Servir les fichiers .php à la racine en masquant l'extension
+# --- 2) Gérer la racine (/) proprement ---
+# Si tu as index.php à la racine, il sera servi via DirectoryIndex.
+# Mais si tu veux être robuste même si tout passe par /public, décommente la ligne ci-dessous :
+# RewriteRule ^$ public/index.php [L]
+
+# --- 3) Si fichier/dossier existe, on ne réécrit pas ---
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# --- 4) /page -> /page.php (si existe à la racine)
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+?)/?$ $1.php [L]
 
-# 3. Servir les fichiers du dossier public/ en masquant le dossier et l'extension
+# --- 5) /page -> /public/page.php (si existe dans public/)
 RewriteCond %{DOCUMENT_ROOT}/public/$1.php -f
 RewriteRule ^(.+?)/?$ public/$1.php [L]
+
+# --- 6) Fallback (si tu as un routeur/contrôleur frontal)
+# Si tu as un public/index.php qui gère tout, décommente :
+# RewriteRule ^ public/index.php [L]
