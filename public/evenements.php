@@ -111,10 +111,10 @@ include $base_path . 'includes/header.php';
                 <div id="carouselCOD" class="carousel slide shadow-lg rounded-4 overflow-hidden h-100" data-bs-ride="carousel">
                     <div class="carousel-inner h-100">
                         <div class="carousel-item active h-100">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100 h-100" alt="InCyber 1" style="object-fit: cover; min-height: 400px;">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/incyber.jpeg" class="d-block w-100 h-100 carousel-img-standard" alt="InCyber 1">
                         </div>
                         <div class="carousel-item h-100">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100 h-100" alt="InCyber 2" style="object-fit: cover; min-height: 400px;">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/police.jpeg" class="d-block w-100 h-100 carousel-img-standard" alt="InCyber 2">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselCOD" data-bs-slide="prev">
@@ -159,10 +159,10 @@ include $base_path . 'includes/header.php';
                  <div id="carouselHornet" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet1.jpeg" class="d-block w-100" alt="Hornet" style="max-height: 250px; object-fit: cover;">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet1.jpeg" class="d-block w-100 carousel-img-standard" alt="Hornet" style="height: 250px;">
                         </div>
                         <div class="carousel-item">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet2.jpeg" class="d-block w-100" alt="Hornet" style="max-height: 250px; object-fit: cover;">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet2.jpeg" class="d-block w-100 carousel-img-standard" alt="Hornet" style="height: 250px;">
                         </div>
                     </div>
                 </div>
@@ -207,13 +207,13 @@ include $base_path . 'includes/header.php';
                     <div id="carouselAudace" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace.jpg" class="d-block w-100" alt="Zenith" style="max-height: 300px; object-fit: cover;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace.jpg" class="d-block w-100 carousel-img-standard" alt="Zenith" style="height: 300px;">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace1.jpg" class="d-block w-100" alt="Plateau" style="max-height: 300px; object-fit: cover;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace1.jpg" class="d-block w-100 carousel-img-standard" alt="Plateau" style="height: 300px;">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace2.jpg" class="d-block w-100" alt="Scene" style="max-height: 300px; object-fit: cover;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace2.jpg" class="d-block w-100 carousel-img-standard" alt="Scene" style="height: 300px;">
                             </div>
                         </div>
                     </div>
@@ -242,10 +242,10 @@ include $base_path . 'includes/header.php';
                      <div id="carouselPGWScene" class="carousel slide shadow-lg rounded-4 overflow-hidden h-100" data-bs-ride="carousel">
                         <div class="carousel-inner h-100">
                             <div class="carousel-item active h-100">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100 h-100" alt="PGW 1" style="object-fit: cover; min-height: 400px;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100 h-100 carousel-img-standard" alt="PGW 1">
                             </div>
                             <div class="carousel-item h-100">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100 h-100" alt="PGW 2" style="object-fit: cover; min-height: 400px;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100 h-100 carousel-img-standard" alt="PGW 2">
                             </div>
                         </div>
                     </div>
@@ -263,9 +263,9 @@ include $base_path . 'includes/header.php';
                              </div>
                              <div id="carouselCybertruck" class="carousel slide rounded-3 overflow-hidden" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100" style="height: 120px; object-fit: cover;"></div>
-                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100" style="height: 120px; object-fit: cover;"></div>
-                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100" style="height: 120px; object-fit: cover;"></div>
+                                    <div class="carousel-item active"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
+                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
+                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
                                 </div>
                              </div>
                         </div>
