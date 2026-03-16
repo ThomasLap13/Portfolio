@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"C:\\\\Users\\\\thoma\\\\SynologyDrive\\\\Documents\\\\Projets\\\\Portfolio\\\\public\"/*.php)",
+      "Bash(where php:*)",
+      "Read(//c/xampp/php/**)",
+      "Read(//c/wamp64/bin/**)",
+      "Read(//c/Program Files/PHP/**)",
+      "Read(//c/php/**)"
+    ]
+  }
+}

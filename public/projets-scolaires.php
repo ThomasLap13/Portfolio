@@ -1,11 +1,8 @@
 <?php
 $base_path = './';
+$page_title = 'Projets Scolaires — Thomas Lapierre';
 include '../includes/header.php';
 ?>
-
-<head>
-    <title>Projets Scolaires — Thomas Lapierre</title>
-</head>
 
 <main>
     <div class="container mt-5 mb-5">
@@ -31,14 +28,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/n8n/N8N.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Workflow Automation N8N">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/n8n/N8N.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Workflow Automation N8N" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Workflow Global</h5>
                                     <p class="mb-0">Vue d'ensemble du processus d'automatisation.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/n8n/Notion.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Intégration Notion">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/n8n/Notion.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Intégration Notion" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Intégration Notion</h5>
                                     <p class="mb-0">Connexion et insertion automatique des données.</p>
@@ -92,21 +89,21 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/repos.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Repository">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/repos.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Repository" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Gestion de Version</h5>
                                     <p class="mb-0">Utilisation de Git et Azure DevOps pour le suivi du projet.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/dev.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Développement">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/dev.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Développement" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Développement Local</h5>
                                     <p class="mb-0">Environnement de développement avec WAMP et VS Code.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/azur.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Azure">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/portfolio/azur.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Azure" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Déploiement Azure</h5>
                                     <p class="mb-0">Hébergement et déploiement continu sur Azure Web Apps.</p>
@@ -134,19 +131,19 @@ include '../includes/header.php';
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fab fa-git-alt me-2 text-primary"></i>Git & GitHub</h6>
+                                    <h6 class="fw-bold"><i class="fab fa-git-alt me-2 text-primary"></i>Git & GitHub</h6>
                                     <p class="small text-muted mb-0">Gestion de versions et collaboration (commits, branches, pull requests).</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-cogs me-2 text-primary"></i>Azure DevOps</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-cogs me-2 text-primary"></i>Azure DevOps</h6>
                                     <p class="small text-muted mb-0">Planification des tâches (Kanban) et orchestration des pipelines de déploiement.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-cloud me-2 text-primary"></i>Azure Web Apps</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-cloud me-2 text-primary"></i>Azure Web Apps</h6>
                                     <p class="small text-muted mb-0">Hébergement PaaS (Platform as a Service) garantissant disponibilité et scalabilité.</p>
                                 </div>
                             </div>
@@ -174,14 +171,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Mode Classique</h5>
                                     <p class="mb-0">Devinez le modèle à partir de l'image.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto 2" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Mode Progressif</h5>
                                     <p class="mb-0">L'image se dévoile petit à petit. Rapidité = Points !</p>
@@ -213,7 +210,7 @@ include '../includes/header.php';
                     </div>
 
                     <div class="text-center">
-                        <a href="https://thomas-bikedle-gzh3gnh9cugnfgha.francecentral-01.azurewebsites.net/Accueil.html" class="btn btn-custom px-5 py-2" target="_blank">
+                        <a href="https://thomas-bikedle-gzh3gnh9cugnfgha.francecentral-01.azurewebsites.net/Accueil.html" class="btn btn-custom px-5 py-2" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-play me-2"></i>Jouer au Quiz
                         </a>
                     </div>
@@ -238,7 +235,7 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/7 erreurs/7erreurs.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Jeu des 7 erreurs">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/7 erreurs/7erreurs.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Jeu des 7 erreurs" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Interactivité</h5>
                                     <p class="mb-0">Projet axé sur la gestion des événements JavaScript et la manipulation du DOM.</p>
@@ -270,7 +267,7 @@ include '../includes/header.php';
                     </div>
 
                     <div class="text-center">
-                        <a href="https://thomas-bikedle-gzh3gnh9cugnfgha.francecentral-01.azurewebsites.net/Accueil.html" class="btn btn-custom px-5 py-2" target="_blank">
+                        <a href="https://thomas-bikedle-gzh3gnh9cugnfgha.francecentral-01.azurewebsites.net/Accueil.html" class="btn btn-custom px-5 py-2" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-play me-2"></i>Jouer au Quiz
                         </a>
                     </div>
@@ -282,7 +279,7 @@ include '../includes/header.php';
 
         <!-- OneNote -->
         <div class="text-center mt-5">
-            <a href="https://groupesb.sharepoint.com/sites/BTSSIO2026/_layouts/15/Doc.aspx?sourcedoc={d19f7864-7ec3-4fc2-a84a-990667434dc3}&action=view&wd=target%28THOMAS%20LAPIERRE%2FB1.one%7C91607539-3a0d-4984-bd36-7cd4ce23aa8a%2F%29&wdorigin=717" class="btn btn-outline-light px-4 py-2" target="_blank">
+            <a href="https://groupesb.sharepoint.com/sites/BTSSIO2026/_layouts/15/Doc.aspx?sourcedoc={d19f7864-7ec3-4fc2-a84a-990667434dc3}&action=view&wd=target%28THOMAS%20LAPIERRE%2FB1.one%7C91607539-3a0d-4984-bd36-7cd4ce23aa8a%2F%29&wdorigin=717" class="btn btn-outline-light px-4 py-2" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-book me-2"></i>Consulter mon OneNote de cours
             </a>
         </div>

@@ -1,11 +1,8 @@
 <?php
 $base_path = './';
+$page_title = 'Projets Perso — Thomas Lapierre';
 include '../includes/header.php';
 ?>
-
-<head>
-    <title>Projets Perso — Thomas Lapierre</title>
-</head>
 
 <main>
     <div class="container mt-5 mb-5">
@@ -20,7 +17,7 @@ include '../includes/header.php';
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="d-flex align-items-center justify-content-center mb-4">
-                        <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_logo.png" alt="SlapIA Logo" height="40" class="me-3">
+                        <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_logo.png" alt="SlapIA Logo" height="40" class="me-3" loading="lazy">
                         <h2 class="mb-0">SlapIA</h2>
                     </div>
                     
@@ -31,7 +28,7 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_mockup.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="SlapIA Mockup">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_mockup.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="SlapIA Mockup" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
                                     <h5>Plateforme de Formation</h5>
                                     <p class="mb-0">Maîtrisez l'IA et l'IT avec nos parcours structurés.</p>
@@ -65,7 +62,7 @@ include '../includes/header.php';
                         <div class="row g-4 mb-5">
                             <div class="col-md-4">
                                 <div class="glass-card p-3 h-100 border-top border-primary border-3">
-                                    <h5 class="text-white mb-3 small fw-bold text-uppercase tracking-wider">Niveau 1 : Fondations</h5>
+                                    <h5 class="mb-3 small fw-bold text-uppercase tracking-wider">Niveau 1 : Fondations</h5>
                                     <p class="small text-muted mb-3">Maîtrise du Prompting avancé (ChatGPT, Claude) et structuration des connaissances avec Notion.</p>
                                     <div class="d-flex flex-wrap gap-2">
                                         <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Prompting</span>
@@ -75,7 +72,7 @@ include '../includes/header.php';
                             </div>
                             <div class="col-md-4">
                                 <div class="glass-card p-3 h-100 border-top border-info border-3">
-                                    <h5 class="text-white mb-3 small fw-bold text-uppercase tracking-wider">Niveau 2 : Agents IA</h5>
+                                    <h5 class="mb-3 small fw-bold text-uppercase tracking-wider">Niveau 2 : Agents IA</h5>
                                     <p class="small text-muted mb-3">Création d'agents intelligents autonomes et automatisation des processus métiers redondants.</p>
                                     <div class="d-flex flex-wrap gap-2">
                                         <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">AI Agents</span>
@@ -85,7 +82,7 @@ include '../includes/header.php';
                             </div>
                             <div class="col-md-4">
                                 <div class="glass-card p-3 h-100 border-top border-purple border-3">
-                                    <h5 class="text-white mb-3 small fw-bold text-uppercase tracking-wider">Niveau 3 : Workflows</h5>
+                                    <h5 class="mb-3 small fw-bold text-uppercase tracking-wider">Niveau 3 : Workflows</h5>
                                     <p class="small text-muted mb-3">Construction de flux complexes End-to-End avec n8n et Make, connexion via APIs REST.</p>
                                     <div class="d-flex flex-wrap gap-2">
                                         <span class="badge bg-purple bg-opacity-10 text-purple border border-purple border-opacity-25">n8n</span>
@@ -97,33 +94,33 @@ include '../includes/header.php';
 
                         <!-- Stack Technique SlapIA -->
                         <div class="card p-4 border-0 bg-dark bg-opacity-25 mb-4 rounded-4">
-                            <h5 class="text-white mb-4"><i class="fas fa-microchip me-2 text-primary"></i>Coulisses Techniques</h5>
+                            <h5 class="mb-4"><i class="fas fa-microchip me-2 text-primary"></i>Coulisses Techniques</h5>
                             <div class="row g-3">
                                 <div class="col-sm-6 col-lg-3">
                                     <div class="text-center p-3">
                                         <i class="fab fa-php fa-2x text-primary mb-2"></i>
-                                        <h6 class="text-white small">PHP Vanilla</h6>
+                                        <h6 class="small">PHP Vanilla</h6>
                                         <p class="x-small text-muted">Architecture propre, sans framework lourd.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-3">
                                     <div class="text-center p-3">
                                         <i class="fas fa-database fa-2x text-primary mb-2"></i>
-                                        <h6 class="text-white small">Notion CMS</h6>
+                                        <h6 class="small">Notion CMS</h6>
                                         <p class="x-small text-muted">Base de données en temps réel via API.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-3">
                                     <div class="text-center p-3">
                                         <i class="fas fa-project-diagram fa-2x text-primary mb-2"></i>
-                                        <h6 class="text-white small">n8n Logic</h6>
+                                        <h6 class="small">n8n Logic</h6>
                                         <p class="x-small text-muted">Agents conversationnels et mails automatisés.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-3">
                                     <div class="text-center p-3">
                                         <i class="fas fa-bolt fa-2x text-primary mb-2"></i>
-                                        <h6 class="text-white small">Gemini Flash</h6>
+                                        <h6 class="small">Gemini Flash</h6>
                                         <p class="x-small text-muted">Intelligence ultra-rapide pour le support.</p>
                                     </div>
                                 </div>
@@ -133,7 +130,7 @@ include '../includes/header.php';
                         <div class="row g-3 mb-4">
                             <div class="col-md-6">
                                 <div class="p-4 rounded-4 border border-secondary border-opacity-25 h-100 bg-primary bg-opacity-10 border-primary">
-                                    <h6 class="text-white mb-3"><i class="fas fa-users-viewfinder me-2 text-primary"></i>Méthodologie SlapIA</h6>
+                                    <h6 class="mb-3"><i class="fas fa-users-viewfinder me-2 text-primary"></i>Méthodologie SlapIA</h6>
                                     <ul class="small text-muted list-unstyled mb-0">
                                         <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Pratique Immédiate</strong> : Exercices concrets dès le jour 1.</li>
                                         <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Accompagnement VIP</strong> : Mentorat privé et visio quotidienne.</li>
@@ -143,14 +140,14 @@ include '../includes/header.php';
                             </div>
                             <div class="col-md-6">
                                 <div class="p-4 rounded-4 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white mb-3"><i class="fas fa-envelope-open-text me-2 text-primary"></i>Automatisation Client</h6>
+                                    <h6 class="mb-3"><i class="fas fa-envelope-open-text me-2 text-primary"></i>Automatisation Client</h6>
                                     <p class="small text-muted">Gestion autonome du cycle client via n8n : Emails de confirmation, notifications d'équipe, formulaires de satisfaction et publication automatique d'avis sur le site.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="text-center">
-                            <a href="https://www.slapia.com" target="_blank" class="btn btn-custom px-4 py-2">
+                            <a href="https://www.slapia.com" target="_blank" rel="noopener noreferrer" class="btn btn-custom px-4 py-2">
                                 <i class="fas fa-external-link-alt me-2"></i> Visiter SlapIA.com
                             </a>
                         </div>
@@ -185,14 +182,14 @@ include '../includes/header.php';
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 2" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Créativité</h5>
                                     <p class="mb-0">Des montages dynamiques et adaptés à votre audience.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 3">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Thomas-Editor/Editor2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Thomas Editor 3" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Qualité Pro</h5>
                                     <p class="mb-0">Un rendu professionnel pour mettre en valeur votre contenu.</p>
@@ -218,19 +215,19 @@ include '../includes/header.php';
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-cut me-2 text-primary"></i>Montage Dynamique</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-cut me-2 text-primary"></i>Montage Dynamique</h6>
                                     <p class="small text-muted mb-0">Rythme soutenu, transitions fluides et storytelling impactant pour captiver l'audience.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-palette me-2 text-primary"></i>Étalonnage</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-palette me-2 text-primary"></i>Étalonnage</h6>
                                     <p class="small text-muted mb-0">Correction colorimétrique et création de looks cinématographiques ou vibrants.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-magic me-2 text-primary"></i>Motion Design</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-magic me-2 text-primary"></i>Motion Design</h6>
                                     <p class="small text-muted mb-0">Intégration de titres animés, sous-titres et effets visuels pour enrichir le contenu.</p>
                                 </div>
                             </div>
@@ -258,14 +255,14 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Game-Réduction/GR-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 1">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Game-Réduction/GR-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 1" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Économies</h5>
                                     <p class="mb-0">Une initiative visant à vous aider à économiser sur vos achats numériques.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Game-Réduction/GR-DA1.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 2">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Game-Réduction/GR-DA1.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Game Réduction 2" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Bons Plans</h5>
                                     <p class="mb-0">Accédez aux meilleures offres et réductions du moment.</p>
@@ -282,6 +279,16 @@ include '../includes/header.php';
                         </button>
                     </div>
 
+                    <div class="card p-4 mb-3 border-0 glass-card-hover">
+                        <h4 class="text-primary mb-3">Bons Plans Jeux Vidéo</h4>
+                        <p class="text-muted mb-0">
+                            <strong>Game-Réduction</strong> est un projet dédié aux gamers souhaitant accéder aux meilleures offres et réductions sur les jeux vidéo et le contenu numérique. Une plateforme de veille et de partage de bons plans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <hr class="my-5 opacity-25">
 
         <!-- TechHardware -->
@@ -296,11 +303,11 @@ include '../includes/header.php';
                     <div id="carouselTechHardware" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselTechHardware" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselTechHardware" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselTechHardware" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Tech-Hardware/Tech-Hardware-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 1">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/Tech-Hardware/Tech-Hardware-DA.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="TechHardware 1" loading="lazy" decoding="async">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Conseils PC</h5>
                                     <p class="mb-0">Votre solution pour obtenir des conseils personnalisés sur l'achat de PC.</p>
@@ -320,6 +327,21 @@ include '../includes/header.php';
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselTechHardware" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+
+                    <div class="card p-4 mb-3 border-0 glass-card-hover">
+                        <h4 class="text-primary mb-3">Conseil & Accompagnement Hardware</h4>
+                        <p class="text-muted mb-0">
+                            <strong>TechHardware</strong> est un service de conseil personnalisé pour l'achat de PC et l'optimisation matérielle. J'accompagne les utilisateurs dans le choix de composants adaptés à leurs besoins et leur budget, en proposant des configurations sur mesure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
 </main>
 
 <?php

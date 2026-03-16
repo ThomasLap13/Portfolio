@@ -10,13 +10,13 @@
                 Toujours à la recherche de nouveaux défis à relever.
             </p>
             <div class="social-icons">
-                <a href="https://linktr.ee/thomas.lapierre" target="_blank" title="Linktree">
+                <a href="https://linktr.ee/thomas.lapierre" target="_blank" rel="noopener noreferrer" title="Linktree">
                     <i class="bi bi-link-45deg"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/lapierre-thomas/" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/lapierre-thomas/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
-                <a href="https://github.com/ThomasLap13" target="_blank" title="GitHub">
+                <a href="https://github.com/ThomasLap13" target="_blank" rel="noopener noreferrer" title="GitHub">
                     <i class="bi bi-github"></i>
                 </a>
             </div>

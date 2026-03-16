@@ -1,8 +1,10 @@
 <?php
-$base_path = '../';
-include $base_path . 'includes/header.php';
+$base_path = './';
+$page_title = 'Événements — Thomas Lapierre';
+include '../includes/header.php';
 ?>
 
+<main>
 <div class="container my-5 pt-5">
     <div class="text-center mb-5 fade-in">
         <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 mb-3 d-inline-block" style="letter-spacing:1.5px;font-size:.75rem;">SALONS & CONFÉRENCES</span>
@@ -15,14 +17,14 @@ include $base_path . 'includes/header.php';
         <div class="card p-0 overflow-hidden border-0 shadow-lg">
             <div class="row g-0">
                 <div class="col-lg-12 position-relative">
-                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace-2025/audace2025.jpeg" class="img-fluid w-100" alt="L'audace d'entreprendre 2025" style="max-height: 450px; width: 100%; object-fit: cover;">
+                    <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace-2025/audace2025.jpeg" class="img-fluid w-100" alt="L'audace d'entreprendre 2025" style="max-height: 450px; width: 100%; object-fit: cover;" loading="lazy">
                     <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark-to-top">
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
                             <div>
                                 <h2 class="display-5 fw-bold text-white mb-0">Audace d'Entreprendre 2025</h2>
                                 <span class="badge bg-primary px-3 py-2 rounded-pill mt-2">Édition Dijonnaise</span>
                             </div>
-                            <a href="https://dijon2025.audace-entreprendre.fr/le-programme/" target="_blank" class="btn btn-custom rounded-pill">
+                            <a href="https://dijon2025.audace-entreprendre.fr/le-programme/" target="_blank" rel="noopener noreferrer" class="btn btn-custom rounded-pill">
                                 <i class="fas fa-external-link-alt me-2"></i> Voir le Programme
                             </a>
                         </div>
@@ -160,10 +162,10 @@ include $base_path . 'includes/header.php';
                  <div id="carouselHornet" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet1.jpeg" class="d-block w-100 carousel-img-standard" alt="Hornet" style="height: 250px;">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet1.jpeg" class="d-block w-100 carousel-img-standard" alt="Hornet" style="height: 250px;" loading="lazy">
                         </div>
                         <div class="carousel-item">
-                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet2.jpeg" class="d-block w-100 carousel-img-standard" alt="Hornet" style="height: 250px;">
+                            <img src="<?php echo $base_path; ?>assets/images/Conférences/Incyber/hornet2.jpeg" class="d-block w-100 carousel-img-standard" alt="Hornet" style="height: 250px;" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -200,7 +202,7 @@ include $base_path . 'includes/header.php';
                 <div class="col-md-6">
                     <div class="card h-100 p-4 d-flex flex-column justify-content-center glass-item">
                         <p class="fs-5 text-muted mb-0 italic">
-                            "Un événement phare dédié à l'innovation and au partage d'idées novatrices, transformant le Zénith de Dijon en hub entrepreneurial."
+                            "Un événement phare dédié à l'innovation et au partage d'idées novatrices, transformant le Zénith de Dijon en hub entrepreneurial."
                         </p>
                     </div>
                 </div>
@@ -208,13 +210,13 @@ include $base_path . 'includes/header.php';
                     <div id="carouselAudace" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace.jpg" class="d-block w-100 carousel-img-standard" alt="Zenith" style="height: 300px;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace.jpg" class="d-block w-100 carousel-img-standard" alt="Zenith" style="height: 300px;" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace1.jpg" class="d-block w-100 carousel-img-standard" alt="Plateau" style="height: 300px;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace1.jpg" class="d-block w-100 carousel-img-standard" alt="Plateau" style="height: 300px;" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace2.jpg" class="d-block w-100 carousel-img-standard" alt="Scene" style="height: 300px;">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/Audace/Audace2.jpg" class="d-block w-100 carousel-img-standard" alt="Scene" style="height: 300px;" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -243,10 +245,10 @@ include $base_path . 'includes/header.php';
                      <div id="carouselPGWScene" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100 carousel-img-standard" alt="PGW 1">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/grande-scene.jpg" class="d-block w-100 carousel-img-standard" alt="PGW 1" loading="lazy">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100 carousel-img-standard" alt="PGW 2">
+                                <img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/xbox-scene.jpg" class="d-block w-100 carousel-img-standard" alt="PGW 2" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -255,7 +257,7 @@ include $base_path . 'includes/header.php';
                     <div class="card p-4 h-100 glass-item">
                         <h4 style="color: #6f42c1;" class="mb-3">Divertissement & High-Tech</h4>
                         <p class="text-muted small">
-                            L'un des plus grands salons dédiés aux jeux vidéo en Europe. Focus sur les performances matérielles and le développement graphique poussé.
+                            L'un des plus grands salons dédiés aux jeux vidéo en Europe. Focus sur les performances matérielles et le développement graphique poussé.
                         </p>
                         <div class="mt-4">
                              <div class="p-3 glass-item rounded-4 mb-3">
@@ -264,8 +266,8 @@ include $base_path . 'includes/header.php';
                              </div>
                              <div id="carouselCybertruck" class="carousel slide rounded-3 overflow-hidden" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
-                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;"></div>
+                                    <div class="carousel-item active"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-1.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;" loading="lazy"></div>
+                                    <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-2.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;" loading="lazy"></div>
                                     <div class="carousel-item"><img src="<?php echo $base_path; ?>assets/images/Conférences/PGW/cyber-3.jpg" class="d-block w-100 carousel-img-standard" style="height: 150px;" loading="lazy" decoding="async"></div>
                                 </div>
                              </div>
@@ -277,12 +279,13 @@ include $base_path . 'includes/header.php';
             <div class="card p-4 mt-4 glass-item">
                 <h5 style="color: #6f42c1;" class="mb-3">Ce que retient un profil IT :</h5>
                 <div class="row g-3 text-muted small">
-                    <div class="col-md-6 border-start border-purple ps-3" style="border-left: 3px solid #6f42c1 !important;"><strong>Optimisation logicielle:</strong> Observation des performances graphiques and moteurs de rendu de dernière génération.</div>
-                    <div class="col-md-6 border-start border-purple ps-3" style="border-left: 3px solid #6f42c1 !important;"><strong>Network Gaming:</strong> Compréhension des enjeux de latence and d'infrastructures serveurs massives.</div>
+                    <div class="col-md-6 border-start border-purple ps-3" style="border-left: 3px solid #6f42c1 !important;"><strong>Optimisation logicielle:</strong> Observation des performances graphiques et moteurs de rendu de dernière génération.</div>
+                    <div class="col-md-6 border-start border-purple ps-3" style="border-left: 3px solid #6f42c1 !important;"><strong>Network Gaming:</strong> Compréhension des enjeux de latence et d'infrastructures serveurs massives.</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</main>
 
-<?php require_once $base_path . 'includes/footer.php'; ?>
+<?php require_once '../includes/footer.php'; ?>

@@ -1,11 +1,8 @@
 <?php
 $base_path = './';
+$page_title = 'Contact — Thomas Lapierre';
 include '../includes/header.php';
 ?>
-
-<head>
-    <title>Contact — Thomas Lapierre</title>
-</head>
 
 <main>
     <section class="container mt-5 mb-5">
@@ -31,7 +28,7 @@ include '../includes/header.php';
                             Toujours ouvert aux opportunités de collaboration, aux questions sur mon parcours ou pour échanger sur la tech.
                         </p>
                         <p class="text-muted mb-4">
-                            Basé à <strong class="text-white">Besançon</strong> &amp; <strong class="text-white">Dijon</strong>.
+                            Basé à <strong>Besançon</strong> &amp; <strong>Dijon</strong>.
                         </p>
                         <div class="d-flex flex-wrap gap-2 justify-content-center">
                             <span class="skill-tag"><i class="fas fa-network-wired me-1"></i>Sysadmin</span>
@@ -61,13 +58,13 @@ include '../includes/header.php';
                             <!-- Other links -->
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <a href="https://linktr.ee/thomas.lapierre" target="_blank"
+                                    <a href="https://linktr.ee/thomas.lapierre" target="_blank" rel="noopener noreferrer"
                                        class="btn btn-outline-light w-100 p-3 h-100 d-flex align-items-center justify-content-center gap-2 rounded-3">
                                         <i class="fas fa-link text-primary"></i> Linktree
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="https://github.com/ThomasLap13" target="_blank"
+                                    <a href="https://github.com/ThomasLap13" target="_blank" rel="noopener noreferrer"
                                        class="btn btn-outline-light w-100 p-3 h-100 d-flex align-items-center justify-content-center gap-2 rounded-3">
                                         <i class="fab fa-github"></i> GitHub
                                     </a>

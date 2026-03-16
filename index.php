@@ -1,15 +1,12 @@
 <?php
 $base_path = './';
+$page_title = 'Thomas Lapierre — Portfolio';
 include './includes/header.php';
 
 $dateNaissance = "2006-06-13";
 $diff = date_diff(date_create($dateNaissance), date_create(date("Y-m-d")));
 $age = $diff->y;
 ?>
-
-<head>
-    <title>Thomas Lapierre — Portfolio</title>
-</head>
 
 <main>
 
@@ -91,7 +88,7 @@ $age = $diff->y;
                                 "Transformer une infrastructure chaotique en un système fiable, documenté et sécurisé — c'est ça qui me motive."
                             </div>
                             <p class="text-muted mb-3">
-                                <?php echo $age; ?> ans · Étudiant <strong class="text-white">BTS SIO (SISR)</strong> à Dijon.<br>
+                                <?php echo $age; ?> ans · Étudiant <strong>BTS SIO (SISR)</strong> à Dijon.<br>
                                 Mon univers ? L'administration système, le réseau et la sécurité informatique.
                             </p>
                             <div class="d-flex flex-wrap gap-2">
@@ -308,7 +305,8 @@ $age = $diff->y;
                 <img src="<?php echo $base_path; ?>assets/images/da/projets.jpg"
                      class="card-img w-100 h-100"
                      alt="Projets"
-                     style="object-fit:cover;opacity:0.28;position:absolute;inset:0;">
+                     style="object-fit:cover;opacity:0.28;position:absolute;inset:0;"
+                     loading="lazy">
                 <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
                     <span class="text-primary small fw-bold text-uppercase mb-2" style="letter-spacing:2px;">Réalisations</span>
                     <h3 class="h2 fw-bold text-white mb-2">Mes Projets</h3>
@@ -326,7 +324,8 @@ $age = $diff->y;
                 <img src="<?php echo $base_path; ?>assets/images/da/evenements.jpg"
                      class="card-img w-100 h-100"
                      alt="Événements"
-                     style="object-fit:cover;opacity:0.18;position:absolute;inset:0;">
+                     style="object-fit:cover;opacity:0.18;position:absolute;inset:0;"
+                     loading="lazy">
                 <div class="card-body d-flex flex-column justify-content-center p-4" style="position:relative;z-index:1;">
                     <i class="fas fa-calendar-star text-primary fs-2 mb-3"></i>
                     <h4 class="fw-bold mb-1">Événements & Salons</h4>
@@ -342,7 +341,8 @@ $age = $diff->y;
                 <img src="<?php echo $base_path; ?>assets/images/da/veilles.jpg"
                      class="card-img w-100 h-100"
                      alt="Veille"
-                     style="object-fit:cover;opacity:0.18;position:absolute;inset:0;">
+                     style="object-fit:cover;opacity:0.18;position:absolute;inset:0;"
+                     loading="lazy">
                 <div class="card-body p-4 text-center d-flex flex-column justify-content-center" style="position:relative;z-index:1;">
                     <i class="fas fa-newspaper text-primary fs-2 mb-3"></i>
                     <h5 class="fw-bold mb-2">Veille Techno</h5>
@@ -356,7 +356,8 @@ $age = $diff->y;
                 <img src="<?php echo $base_path; ?>assets/images/da/contact.jpg"
                      class="card-img w-100 h-100"
                      alt="Contact"
-                     style="object-fit:cover;opacity:0.15;position:absolute;inset:0;">
+                     style="object-fit:cover;opacity:0.15;position:absolute;inset:0;"
+                     loading="lazy">
                 <div class="card-body p-4 d-flex flex-column justify-content-center" style="position:relative;z-index:1;">
                     <i class="fas fa-paper-plane text-primary fs-2 mb-3"></i>
                     <h5 class="fw-bold mb-1">Contact</h5>
@@ -381,7 +382,8 @@ $age = $diff->y;
                     <div class="position-relative overflow-hidden" style="border-radius:20px 20px 0 0;">
                         <img src="<?php echo $base_path; ?>assets/images/stage-alternance/mm.jpg"
                              class="card-img-top" alt="Micro-Mega"
-                             style="height:180px;object-fit:cover;">
+                             style="height:180px;object-fit:cover;"
+                             loading="lazy">
                         <div class="position-absolute inset-0" style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);"></div>
                         <span class="position-absolute top-0 end-0 m-3 badge rounded-pill bg-primary shadow-sm">Alternance</span>
                     </div>
@@ -408,7 +410,8 @@ $age = $diff->y;
                     <div class="position-relative overflow-hidden" style="border-radius:20px 20px 0 0;">
                         <img src="<?php echo $base_path; ?>assets/images/stage-alternance/adeo.jpg"
                              class="card-img-top" alt="Adeo"
-                             style="height:180px;object-fit:cover;">
+                             style="height:180px;object-fit:cover;"
+                             loading="lazy">
                         <span class="position-absolute top-0 end-0 m-3 badge rounded-pill bg-secondary shadow-sm">Stage</span>
                     </div>
                     <div class="card-body p-4">

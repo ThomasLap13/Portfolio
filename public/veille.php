@@ -1,13 +1,8 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 $base_path = './';
+$page_title = 'Veille Technologique — Thomas Lapierre';
 include '../includes/header.php';
 ?>
-
-<head>
-    <title>Veille Technologique - Thomas Lapierre</title>
-</head>
 
 <main>
     <section class="container mt-5">
@@ -171,15 +166,15 @@ if (!empty($data['results'])) {
         // Image cliquable vers article
         if ($image && $lien) {
             echo '<a href="' . htmlspecialchars($lien) . '" target="_blank" rel="noopener noreferrer" class="overflow-hidden d-block">';
-            echo '<img src="' . htmlspecialchars($image) . '" class="card-img-top transition-transform" alt="Illustration de la veille" style="height: 200px; object-fit: cover;">';
+            echo '<img src="' . htmlspecialchars($image) . '" class="card-img-top transition-transform" alt="Illustration de la veille" style="height: 200px; object-fit: cover;" loading="lazy">';
             echo '</a>';
         } elseif ($image) {
             echo '<div class="overflow-hidden">';
-            echo '<img src="' . htmlspecialchars($image) . '" class="card-img-top transition-transform" alt="Illustration de la veille" style="height: 200px; object-fit: cover;">';
+            echo '<img src="' . htmlspecialchars($image) . '" class="card-img-top transition-transform" alt="Illustration de la veille" style="height: 200px; object-fit: cover;" loading="lazy">';
             echo '</div>';
         }
         echo '<div class="card-body d-flex flex-column p-4">';
-        echo '<h5 class="card-title fw-bold mb-2 text-white">' . htmlspecialchars($titre) . '</h5>';
+        echo '<h5 class="card-title fw-bold mb-2">' . htmlspecialchars($titre) . '</h5>';
         if ($date) {
             echo '<h6 class="card-subtitle mb-3 text-primary small"><i class="far fa-calendar-alt me-1"></i>' . htmlspecialchars(date('d/m/Y', strtotime($date))) . '</h6>';
         }
@@ -203,7 +198,7 @@ if (!empty($data['results'])) {
         echo '</div>'; // End card-text
 
         if ($lien) {
-            echo '<a href="' . htmlspecialchars($lien) . '" target="_blank" class="btn btn-custom mt-3 w-100"><i class="fas fa-external-link-alt me-2"></i>Lire l\'article</a>';
+            echo '<a href="' . htmlspecialchars($lien) . '" target="_blank" rel="noopener noreferrer" class="btn btn-custom mt-3 w-100"><i class="fas fa-external-link-alt me-2"></i>Lire l\'article</a>';
         }
 
         echo '</div></div></div>';

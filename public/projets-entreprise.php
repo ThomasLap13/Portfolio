@@ -1,10 +1,8 @@
 <?php
 $base_path = './';
+$page_title = 'Projets Entreprise — Thomas Lapierre';
 include '../includes/header.php';
 ?>
-<head>
-    <title>Projets Entreprise — Thomas Lapierre</title>
-</head>
 <main>
     <div class="container mt-5 mb-5">
         <div class="text-center mb-5 fade-in">
@@ -26,7 +24,7 @@ include '../includes/header.php';
                             <div class="col-lg-7">
                                 <div class="badge bg-primary mb-3">2026</div>
                                 <h2 class="display-5 fw-bold mb-4">Mise en place de la Formation IA</h2>
-                                <p class="lead text-white border-start border-primary border-4 ps-4 mb-4">
+                                <p class="lead border-start border-primary border-4 ps-4 mb-4">
                                     "Accompagner la mutation technologique de l'entreprise vers l'intelligence artificielle générative."
                                 </p>
                                 <p class="text-muted">
@@ -61,7 +59,7 @@ include '../includes/header.php';
                                 </div>
                             </div>
                             <div class="col-lg-5 d-none d-lg-block">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_mockup.png" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25" alt="IA Dashboard">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/perso/SlapIA/slapia_mockup.png" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25" alt="IA Dashboard" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -254,21 +252,21 @@ include '../includes/header.php';
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-composants.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Composants">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-composants.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Composants" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Composants Haute Performance</h5>
                                     <p class="mb-0">Sélection rigoureuse : i7-13700K, RTX 4060 Ti.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-config.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Config">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-config.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Config" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Montage & Optimisation</h5>
                                     <p class="mb-0">Assemblage précis et configuration du BIOS.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-cable.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Cable Management">
+                                <img src="<?php echo $base_path; ?>assets/images/projets/entreprise/mm-cable.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Cable Management" loading="lazy">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Cable Management</h5>
                                     <p class="mb-0">Flux d'air optimal et esthétique soignée.</p>
@@ -294,19 +292,19 @@ include '../includes/header.php';
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-microchip me-2 text-primary"></i>Puissance de Calcul</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-microchip me-2 text-primary"></i>Puissance de Calcul</h6>
                                     <p class="small text-muted mb-0">Intel Core i7-13700K pour une fréquence élevée, essentielle pour la modélisation paramétrique.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-video me-2 text-primary"></i>Rendu Graphique</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-video me-2 text-primary"></i>Rendu Graphique</h6>
                                     <p class="small text-muted mb-0">NVIDIA RTX 4060 Ti pour fluidifier l'affichage et accélérer les rendus RealView.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="p-3 rounded-3 border border-secondary border-opacity-25 h-100">
-                                    <h6 class="text-white"><i class="fas fa-memory me-2 text-primary"></i>Réactivité</h6>
+                                    <h6 class="fw-bold"><i class="fas fa-memory me-2 text-primary"></i>Réactivité</h6>
                                     <p class="small text-muted mb-0">32 Go DDR5 & SSD NVMe Gen4 pour des chargements instantanés des gros projets.</p>
                                 </div>
                             </div>
