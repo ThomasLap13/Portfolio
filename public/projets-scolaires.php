@@ -4,14 +4,15 @@ include '../includes/header.php';
 ?>
 
 <head>
-    <title>Projets Scolaires - Thomas Portfolio</title>
+    <title>Projets Scolaires — Thomas Lapierre</title>
 </head>
 
 <main>
     <div class="container mt-5 mb-5">
-        <div class="text-center mb-5">
-            <h1 class="display-4 fw-bold">Projets Scolaires</h1>
-            <p class="lead text-muted">Travaux réalisés dans le cadre de mon BTS SIO.</p>
+        <div class="text-center mb-5 fade-in">
+            <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 mb-3 d-inline-block" style="letter-spacing:1.5px;font-size:.75rem;">BTS SIO — SISR</span>
+            <h1 class="display-4 fw-bold text-gradient mb-3">Projets Scolaires</h1>
+            <p class="lead text-muted mx-auto" style="max-width:550px;">Travaux réalisés dans le cadre de mon BTS SIO.</p>
         </div>
 
         <!-- Veille N8N -->

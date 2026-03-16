@@ -4,9 +4,10 @@ include $base_path . 'includes/header.php';
 ?>
 
 <div class="container my-5 pt-5">
-    <div class="text-center mb-5 hidden">
-        <h1 class="display-3 fw-bold mb-3">Événements <span class="text-primary">&</span> Salons</h1>
-        <p class="lead text-muted fs-4">Immersion technique, innovation et rencontres professionnelles.</p>
+    <div class="text-center mb-5 fade-in">
+        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 mb-3 d-inline-block" style="letter-spacing:1.5px;font-size:.75rem;">SALONS & CONFÉRENCES</span>
+        <h1 class="display-3 fw-bold text-gradient mb-3">Événements & Salons</h1>
+        <p class="lead text-muted mx-auto" style="max-width:550px;">Immersion technique, innovation et rencontres professionnelles.</p>
     </div>
 
     <!-- Audace d'Entreprendre 2025 Block -->

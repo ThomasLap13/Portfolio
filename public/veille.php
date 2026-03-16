@@ -12,8 +12,9 @@ include '../includes/header.php';
 <main>
     <section class="container mt-5">
         <div class="text-center mb-5 fade-in">
-            <h1 class="display-4 fw-bold text-gradient">Veille Technologique</h1>
-            <p class="lead text-muted">Une sélection d'articles et de ressources pour rester à jour.</p>
+            <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-2 mb-3 d-inline-block" style="letter-spacing:1.5px;font-size:.75rem;">POWERED BY NOTION & N8N</span>
+            <h1 class="display-4 fw-bold text-gradient mb-3">Veille Technologique</h1>
+            <p class="lead text-muted mx-auto" style="max-width:550px;">Une sélection d'articles et de ressources pour rester à la pointe.</p>
         </div>
         
 <?php
