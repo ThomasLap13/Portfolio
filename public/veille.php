@@ -16,6 +16,7 @@ include '../includes/header.php';
             <p class="lead text-muted">Une sélection d'articles et de ressources pour rester à jour.</p>
         </div>
         
+<?php
 // Notion API configuration from environment variables (Docker)
 $token = getenv('NOTION_TOKEN');
 $database_id = getenv('NOTION_DATABASE_ID');
