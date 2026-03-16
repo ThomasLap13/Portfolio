@@ -28,38 +28,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ─────────────────────────── */
-    /* 2. Lenis Smooth Scroll      */
+    /* 2. Lenis Smooth Scroll (Disabled) */
     /* ─────────────────────────── */
     let lenis = null;
+    /*
     if (typeof Lenis !== "undefined") {
         lenis = new Lenis({
             duration: 0.85,
-            easing: t => 1 - Math.pow(1 - t, 4), // ease-out quartic : démarre vite, freine doucement
+            easing: t => 1 - Math.pow(1 - t, 4), 
             smooth: true,
             smoothTouch: false,
         });
 
-        // Stop initially if welcome screen is present (index.php)
         if (document.getElementById("welcomeScreen")) {
             lenis.stop();
         }
 
-        // Expose globally so scroll.js + hideWelcome can access it
         window._lenis = lenis;
 
-        // Connect with GSAP ScrollTrigger (if loaded)
         if (typeof ScrollTrigger !== "undefined") {
             lenis.on("scroll", ScrollTrigger.update);
             gsap.ticker.add(time => lenis.raf(time * 1000));
             gsap.ticker.lagSmoothing(0);
         } else {
-            // Plain RAF loop
             (function raf(time) {
                 lenis.raf(time);
                 requestAnimationFrame(raf);
             })();
         }
     }
+    */
 
     /* ─────────────────────────── */
     /* 3. Page Transitions         */
@@ -149,8 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
             progressBar.style.width = total > 0 ? (scrolled / total * 100) + "%" : "0%";
         };
         window.addEventListener("scroll", updateProgress, { passive: true });
-        // Also hook into Lenis if available
-        if (lenis) lenis.on("scroll", updateProgress);
     }
 
     /* ─────────────────────────── */
@@ -160,7 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navbar) {
         const updateNav = () => navbar.classList.toggle("scrolled", window.scrollY > 50);
         window.addEventListener("scroll", updateNav, { passive: true });
-        if (lenis) lenis.on("scroll", ({ scroll }) => navbar.classList.toggle("scrolled", scroll > 50));
         updateNav();
     }
 
@@ -480,18 +475,15 @@ function hideWelcome() {
             onComplete: () => {
                 welcome.style.display = "none";
                 document.body.style.overflow = "auto";
-                if (window._lenis) window._lenis.start();
             }
         });
     } else {
         welcome.classList.add("hidden");
         document.body.style.overflow = "auto";
-        if (window._lenis) window._lenis.start();
     }
 
     const first = document.getElementById("a-propos");
     if (first) setTimeout(() => {
-        if (window._lenis) window._lenis.scrollTo(first, { duration: 1.5 });
-        else first.scrollIntoView({ behavior: "smooth" });
+        first.scrollIntoView({ behavior: "smooth" });
     }, 700);
 }

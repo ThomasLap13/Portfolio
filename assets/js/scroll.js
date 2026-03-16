@@ -10,11 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const welcomeScreen = document.getElementById("welcomeScreen");
     if (!welcomeScreen) return;
 
-    // Lenis est déjà stoppé par script.js (même DOMContentLoaded, enregistré après).
-    // Fallback si Lenis n'est pas encore prêt.
-    if (!window._lenis) {
-        document.body.style.overflow = "hidden";
-    }
+    // document.body.style.overflow = "hidden"; // Optionnel : laisser le CSS gérer l'overflow initial si besoin
 
     function triggerHide() {
         // Délègue à hideWelcome() si disponible (GSAP + animation complète)
@@ -28,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
                 welcomeScreen.style.display  = "none";
                 document.body.style.overflow = "auto";
-                if (window._lenis) window._lenis.start();
             }, 700);
         }
     }
