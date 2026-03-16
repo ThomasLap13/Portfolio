@@ -1,52 +1,39 @@
+/**
+ * scroll.js — Welcome screen scroll trigger
+ *
+ * Simplifié : écoute un premier scroll/wheel/touchmove et délègue
+ * immédiatement à hideWelcome() (défini dans script.js, chargé après).
+ * Suppression du comportement "ré-afficher au retour en haut" (buggué +
+ * mauvais UX) et suppression du conflit d'animation avec GSAP.
+ */
 document.addEventListener("DOMContentLoaded", function () {
     const welcomeScreen = document.getElementById("welcomeScreen");
     if (!welcomeScreen) return;
 
-    let isFadingOut = false;
-    let isHidden    = false;
-    let lastScrollY = window.scrollY;
-
-    function startFadeOut() {
-        if (!isFadingOut && !isHidden) {
-            isFadingOut = true;
-            welcomeScreen.style.transition = "opacity 0.5s ease-out";
-            welcomeScreen.style.opacity    = "0";
-
-            setTimeout(() => {
-                welcomeScreen.style.display = "none";
-                document.body.style.overflow = "auto";
-                // Start Lenis if available
-                if (window._lenis) window._lenis.start();
-                isHidden    = true;
-                isFadingOut = false;
-            }, 500);
-        }
-    }
-
-    function handleScroll() {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY > lastScrollY && !isHidden) {
-            startFadeOut();
-        } else if (currentScrollY === 0 && isHidden) {
-            welcomeScreen.style.display = "flex";
-            setTimeout(() => {
-                welcomeScreen.style.opacity = "1";
-                document.body.style.overflow = "hidden";
-                if (window._lenis) window._lenis.stop();
-                isHidden = false;
-            }, 10);
-        }
-        lastScrollY = currentScrollY;
-    }
-
-    // Block scroll initially (Lenis-aware)
-    if (window._lenis) {
-        window._lenis.stop();
-    } else {
+    // Lenis est déjà stoppé par script.js (même DOMContentLoaded, enregistré après).
+    // Fallback si Lenis n'est pas encore prêt.
+    if (!window._lenis) {
         document.body.style.overflow = "hidden";
     }
 
-    document.addEventListener("wheel",     startFadeOut, { passive: true });
-    document.addEventListener("touchmove", startFadeOut, { passive: true });
-    window.addEventListener("scroll",      handleScroll, { passive: true });
+    function triggerHide() {
+        // Délègue à hideWelcome() si disponible (GSAP + animation complète)
+        if (typeof hideWelcome === "function") {
+            hideWelcome();
+        } else {
+            // Fallback minimal (si script.js non chargé — cas improbable)
+            welcomeScreen.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+            welcomeScreen.style.opacity   = "0";
+            welcomeScreen.style.transform = "translateY(-30px)";
+            setTimeout(function () {
+                welcomeScreen.style.display  = "none";
+                document.body.style.overflow = "auto";
+                if (window._lenis) window._lenis.start();
+            }, 700);
+        }
+    }
+
+    // once:true → les listeners se retirent automatiquement après le premier déclenchement
+    document.addEventListener("wheel",     triggerHide, { passive: true, once: true });
+    document.addEventListener("touchmove", triggerHide, { passive: true, once: true });
 });

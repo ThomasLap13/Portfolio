@@ -444,6 +444,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    /* ─────────────────────────── */
+    /* 19. Mobile navbar auto-close */
+    /* ─────────────────────────── */
+    const navbarCollapse = document.getElementById("navbarNav");
+    const navbarToggler  = document.querySelector(".navbar-toggler");
+    if (navbarCollapse && navbarToggler) {
+        // Close menu when clicking any nav link or dropdown item on mobile
+        navbarCollapse.querySelectorAll(
+            ".nav-link:not(.dropdown-toggle), .dropdown-item"
+        ).forEach(link => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth < 992 && navbarCollapse.classList.contains("show")) {
+                    navbarToggler.click();
+                }
+            });
+        });
+    }
+
 }); // end DOMContentLoaded
 
 /* ─────────────────────────────────────────── */
