@@ -22,7 +22,7 @@ Ce portfolio est une vitrine dynamique de mes compétences, projets et expérien
 - 💨 **Navigation SPA** : Transitions fluides entre les pages grâce à `Swup.js` sans rechargement complet.
 - 🔗 **Clean URLs** : Structure d'URL optimisée pour le SEO (masquage du dossier `public/` et des extensions `.php`).
 - 📓 **Intégration Notion API** : Récupération dynamique des articles de veille technologique directement depuis une base de données Notion.
-- 🛡️ **Sécurité** : Protection par Cloudflare Turnstile sur les formulaires et gestion sécurisée des variables d'environnement (`.env`).
+- 🛡️ **Sécurité** : Protection par Cloudflare Turnstile sur les formulaires et gestion sécurisée des variables d'environnement (via Docker / `getenv()`).
 - 📱 **Responsive Design** : Entièrement optimisé pour mobiles, tablettes et ordinateurs via Bootstrap 5.
 
 ## 🛠️ Stack Technique
@@ -52,18 +52,13 @@ Ce portfolio est une vitrine dynamique de mes compétences, projets et expérien
 └── README.md           # Documentation
 ```
 
-## 🚀 Installation Locale
+## 🚀 Déploiement Docker
 
-1.  **Prérequis** : Serveur local (XAMPP, WAMP, ou Laragon).
-2.  **Clonage** :
-    ```bash
-    git clone https://github.com/ThomasLap13/Portfolio.git
-    ```
-3.  **Configuration** :
-    - Placez le dossier dans votre `htdocs` ou `www`.
-    - Renommez `.env.example` en `.env` et ajoutez vos clés API (Notion).
-4.  **Accès** :
-    - Ouvrez votre navigateur sur `localhost/Portfolio`.
+1.  **Variables d'environnement** : Configurez les variables suivantes dans votre conteneur ou `docker-compose.yml` :
+    - `NOTION_TOKEN`
+    - `NOTION_DATABASE_ID`
+2.  **Accès** :
+    - Ouvrez votre navigateur sur `https://synologynasthomas.synology.me`.
 
 ---
 

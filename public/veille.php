@@ -16,11 +16,9 @@ include '../includes/header.php';
             <p class="lead text-muted">Une sélection d'articles et de ressources pour rester à jour.</p>
         </div>
         
-<?php
-// Charger les variables d'environnement depuis .env
-$env = parse_ini_file(__DIR__ . '/../.env');
-$token = $env['NOTION_TOKEN'];
-$database_id = $env['NOTION_DATABASE_ID'];
+// Notion API configuration from environment variables (Docker)
+$token = getenv('NOTION_TOKEN');
+$database_id = getenv('NOTION_DATABASE_ID');
 
 // Date Filter Logic - Par semaine
 $selectedWeek = isset($_GET['week']) ? intval($_GET['week']) : 0; // 0 = semaine actuelle
