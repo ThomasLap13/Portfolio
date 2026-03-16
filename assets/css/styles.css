@@ -1066,3 +1066,186 @@ html[data-theme="light"] .btn-cv:hover { background: rgba(220,45,30,0.07); borde
     color: var(--text-muted);
     line-height: 1.8;
 }
+
+/* ======================================== */
+/* MODERN MOBILE & COMPATIBILITY LAYER      */
+/* ======================================== */
+
+/* ── Global scroll behaviour ────────────── */
+html {
+    overscroll-behavior-y: none;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ── iOS background-attachment fix ─────── */
+/* background-attachment:fixed is broken in iOS Safari */
+@media (max-width: 768px) {
+    body { background-attachment: scroll; }
+    .welcome-screen {
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center top !important;
+    }
+}
+
+/* ── iOS notch / safe-area support ─────── */
+@supports (padding: env(safe-area-inset-top)) {
+    .navbar {
+        padding-top: max(0.75rem, calc(0.4rem + env(safe-area-inset-top)));
+    }
+    footer {
+        padding-bottom: calc(30px + env(safe-area-inset-bottom));
+    }
+}
+
+/* ── Navbar toggler — touch-friendly ───── */
+.navbar-toggler {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 0;
+    transition: background 0.2s ease;
+    flex-shrink: 0;
+}
+.navbar-toggler:hover { background: var(--glass-bg); }
+.navbar-toggler:focus { box-shadow: none; }
+
+/* ── Mobile navbar collapse menu ────────── */
+@media (max-width: 991.98px) {
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+        background: rgba(6, 14, 10, 0.97);
+        backdrop-filter: blur(24px) saturate(1.6);
+        -webkit-backdrop-filter: blur(24px) saturate(1.6);
+        border: 1px solid var(--glass-border);
+        border-top: none;
+        border-radius: 0 0 20px 20px;
+        padding: 0.75rem 1rem 1.25rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+    }
+    .navbar-collapse .navbar-nav { gap: 0.2rem; }
+    .navbar-nav .nav-link {
+        padding: 0.65rem 0.9rem !important;
+        border-radius: 10px;
+        transition: background 0.2s ease, opacity 0.2s ease;
+    }
+    .navbar-nav .nav-link:hover { background: rgba(255,255,255,0.05); }
+    .navbar-nav .nav-link::after { display: none; }
+    .nav-item.ms-lg-1, .nav-item.ms-lg-2 { margin-left: 0 !important; margin-top: 0.4rem; }
+    .btn-cv { display: flex; justify-content: center; }
+    .navbar-nav .btn-custom.btn-sm { width: 100%; justify-content: center; }
+}
+html[data-theme="light"] .navbar-collapse.show,
+html[data-theme="light"] .navbar-collapse.collapsing {
+    background: rgba(238, 242, 239, 0.97) !important;
+}
+
+/* ── Touch targets (min 44×44 px) ───────── */
+@media (pointer: coarse) {
+    .theme-toggle { width: 44px; height: 44px; font-size: 1rem; }
+    .social-icons a { width: 48px; height: 48px; }
+    .dropdown-item { min-height: 44px; display: flex; align-items: center; }
+    .btn-cv { min-height: 44px; }
+    .hero-tag { min-height: 40px; display: inline-flex; align-items: center; }
+    .stat-card { min-height: 120px; }
+}
+
+/* ── Disable hover transforms on touch ──── */
+/* Hover effects look broken on tap devices */
+@media (hover: none) {
+    .card:hover, .glass-card-hover:hover {
+        transform: none !important;
+        border-color: var(--glass-border) !important;
+        background: var(--glass-bg) !important;
+        box-shadow: var(--glass-shadow) !important;
+    }
+    .card:hover img { transform: none !important; }
+    .stat-card:hover {
+        transform: none !important;
+        border-color: var(--glass-border) !important;
+        background: var(--glass-bg) !important;
+    }
+    .stat-card:hover::before { opacity: 0 !important; }
+    .hero-tag:hover {
+        transform: none !important;
+        background: rgba(255,255,255,0.055) !important;
+        border-color: rgba(255,255,255,0.11) !important;
+        color: rgba(255,255,255,0.72) !important;
+    }
+    .skill-tag:hover {
+        transform: none !important;
+        background: var(--glass-bg) !important;
+        border-color: var(--glass-border) !important;
+        color: var(--text-muted) !important;
+    }
+    .btn-custom:hover {
+        transform: none !important;
+        box-shadow: 0 4px 20px rgba(255,66,49,0.32) !important;
+    }
+    .btn-cv:hover { transform: none !important; }
+    .social-icons a:hover { transform: none !important; }
+    .footer-links a:hover { transform: none !important; }
+    .dropdown-item:hover { transform: none !important; }
+    .tool-item:hover { background: none !important; color: var(--text-muted) !important; }
+    .tool-item:hover i { filter: none !important; opacity: 0.72 !important; }
+    .navbar-brand:hover img { transform: none !important; }
+    .theme-toggle:hover { transform: none !important; }
+    .skill-tag:hover { transform: none !important; }
+}
+
+/* ── Active / tap feedback on touch ─────── */
+@media (pointer: coarse) {
+    .card:active { transform: scale(0.985) !important; transition: transform 0.12s ease !important; }
+    .btn-custom:active { transform: scale(0.96) !important; transition: transform 0.1s ease !important; }
+    .btn-cv:active { transform: scale(0.96) !important; }
+    .hero-tag:active {
+        background: rgba(255,66,49,0.1) !important;
+        border-color: rgba(255,66,49,0.3) !important;
+        transition: background 0.1s ease !important;
+    }
+    .stat-card:active { transform: scale(0.975) !important; transition: transform 0.1s ease !important; }
+}
+
+/* ── Bento grid — tablet (577–991px) ─────── */
+@media (min-width: 577px) and (max-width: 991px) {
+    .bento-large {
+        grid-column: span 2 !important;
+        grid-row: span 1 !important;
+        min-height: 220px;
+    }
+}
+
+/* ── Small screen fixes (< 380px) ──────── */
+@media (max-width: 380px) {
+    .hero-title { font-size: clamp(2.2rem, 13vw, 3.2rem) !important; letter-spacing: -1.5px; }
+    .hero-badge { font-size: 0.72rem; padding: 0.35rem 0.9rem; }
+    .hero-tag { font-size: 0.71rem; padding: 0.28rem 0.65rem; }
+    .stat-number { font-size: 2rem; }
+    .stat-card { padding: 1.5rem 0.75rem; }
+    .section-title { font-size: 1.7rem !important; }
+    .d-flex.gap-3 { gap: 0.75rem !important; }
+    .btn-lg { padding: 10px 20px; font-size: 0.85rem; }
+    .scroll-indicator { display: none; }
+}
+
+/* ── Reduced motion support ─────────────── */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.15ms !important;
+        scroll-behavior: auto !important;
+    }
+    .blob { animation: none !important; }
+    .marquee-content { animation-play-state: paused; }
+    .profile-img-wrap::before { animation: none !important; }
+    .scroll-indicator-line,
+    .scroll-indicator-bounce { animation: none !important; }
+    .hero-badge .pulse-dot { animation: none !important; }
+    .loader-ring { animation: none !important; border-color: var(--primary); }
+    #scroll-progress { animation: none !important; }
+}
