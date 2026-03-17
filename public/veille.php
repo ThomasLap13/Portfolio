@@ -183,18 +183,20 @@ if (!empty($data['results'])) {
         echo '<div class="card-text small flex-grow-1 text-muted">';
         if ($resume)        echo '<p class="mb-2">' . htmlspecialchars($resume) . '</p>';
         
-        // Accordéon pour les détails supplémentaires pour ne pas surcharger la carte
-        $id = uniqid('collapse');
-        echo '<button class="btn btn-sm btn-outline-light w-100 mt-3 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#'.$id.'" aria-expanded="false">';
-        echo '<i class="fas fa-info-circle me-2"></i>Voir détails</button>';
-        echo '<div class="collapse mt-2" id="'.$id.'">';
-        echo '<div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">';
-        if ($interet_pro)   echo '<p class="mb-2"><strong class="text-primary">Intérêt Pro :</strong><br>' . htmlspecialchars($interet_pro) . '</p>';
-        if ($interet_perso) echo '<p class="mb-2"><strong class="text-primary">Intérêt Perso :</strong><br>' . htmlspecialchars($interet_perso) . '</p>';
-        if ($utilisation)   echo '<p class="mb-2"><strong class="text-primary">Mise en œuvre :</strong><br>' . htmlspecialchars($utilisation) . '</p>';
-        if ($appreciation)  echo '<p class="mb-0"><strong class="text-primary">Fiabilité :</strong><br>' . htmlspecialchars($appreciation) . '</p>';
-        echo '</div>';
-        echo '</div>';
+        // Modal Trigger - Replacement for collapse
+        echo '<button class="btn btn-sm btn-outline-light w-100 mt-3 mb-2 article-details-btn" type="button" 
+                data-bs-toggle="modal" 
+                data-bs-target="#articleModal" 
+                data-titre="' . htmlspecialchars($titre) . '" 
+                data-date="' . htmlspecialchars(date('d/m/Y', strtotime($date))) . '" 
+                data-resume="' . htmlspecialchars($resume) . '" 
+                data-pro="' . htmlspecialchars($interet_pro) . '" 
+                data-perso="' . htmlspecialchars($interet_perso) . '" 
+                data-util="' . htmlspecialchars($utilisation) . '" 
+                data-fiabilite="' . htmlspecialchars($appreciation) . '" 
+                data-lien="' . htmlspecialchars($lien) . '"
+                data-image="' . htmlspecialchars($image) . '">';
+        echo '<i class="fas fa-expand-arrows-alt me-2"></i>Voir les détails</button>';
         echo '</div>'; // End card-text
 
         if ($lien) {
@@ -212,6 +214,136 @@ if (!empty($data['results'])) {
         </div>
     </section>
 </main>
+
+<!-- Modern Modal for Article Details -->
+<div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-card border-secondary border-opacity-25 shadow-2xl">
+            <div class="modal-header border-bottom border-secondary border-opacity-25 p-4">
+                <h5 class="modal-title fw-bold" id="articleModalLabel">Détails de l\'article</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row g-4">
+                    <div class="col-lg-5" id="modal-img-container">
+                        <img id="modal-image" src="" alt="" class="img-fluid rounded-4 shadow-sm w-100" style="height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-7">
+                        <h6 id="modal-date" class="text-primary small mb-2"></h6>
+                        <h3 id="modal-title" class="fw-bold mb-4"></h3>
+                        <div id="modal-content" class="modal-info-scroll" style="max-height: 400px; overflow-y: auto; padding-right: 15px;">
+                            <div class="mb-3">
+                                <h6 class="text-white-50 small text-uppercase mb-2"><i class="fas fa-align-left me-2"></i>Résumé</h6>
+                                <p id="modal-resume" class="text-light"></p>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6" id="modal-pro-container">
+                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-briefcase me-2"></i>Intérêt Pro</h6>
+                                    <p id="modal-pro" class="small text-muted"></p>
+                                </div>
+                                <div class="col-md-6" id="modal-perso-container">
+                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-user-light me-2"></i>Intérêt Perso</h6>
+                                    <p id="modal-perso" class="small text-muted"></p>
+                                </div>
+                                <div class="col-md-6" id="modal-util-container">
+                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-tools me-2"></i>Mise en œuvre</h6>
+                                    <p id="modal-util" class="small text-muted"></p>
+                                </div>
+                                <div class="col-md-6" id="modal-fiabilite-container">
+                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-shield-alt me-2"></i>Fiabilité</h6>
+                                    <p id="modal-fiabilite" class="small text-muted"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-top border-secondary border-opacity-25 p-4 d-flex gap-3">
+                <button type="button" class="btn btn-outline-light px-4" data-bs-dismiss="modal">Fermer</button>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-custom px-4 flex-grow-1">
+                    <i class="fas fa-external-link-alt me-2"></i>Lire l'article complet
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.modal-info-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+.modal-info-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+.modal-info-scroll::-webkit-scrollbar-thumb {
+    background: rgba(var(--bs-primary-rgb), 0.5);
+    border-radius: 10px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const articleModal = document.getElementById('articleModal');
+    if (articleModal) {
+        articleModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget;
+            
+            // Extract info from data-bs-* attributes
+            const titre = button.getAttribute('data-titre');
+            const date = button.getAttribute('data-date');
+            const resume = button.getAttribute('data-resume');
+            const pro = button.getAttribute('data-pro');
+            const perso = button.getAttribute('data-perso');
+            const util = button.getAttribute('data-util');
+            const fiabilite = button.getAttribute('data-fiabilite');
+            const lien = button.getAttribute('data-lien');
+            const image = button.getAttribute('data-image');
+
+            // Update modal content
+            articleModal.querySelector('#modal-title').textContent = titre;
+            articleModal.querySelector('#modal-date').innerHTML = '<i class="far fa-calendar-alt me-1"></i> ' + date;
+            articleModal.querySelector('#modal-resume').textContent = resume;
+            
+            // Handle optional fields
+            const setField = (id, containerId, value) => {
+                const el = articleModal.querySelector('#' + id);
+                const container = articleModal.querySelector('#' + containerId);
+                if (value && value.trim() !== '') {
+                    el.textContent = value;
+                    container.style.display = 'block';
+                } else {
+                    container.style.display = 'none';
+                }
+            };
+
+            setField('modal-pro', 'modal-pro-container', pro);
+            setField('modal-perso', 'modal-perso-container', perso);
+            setField('modal-util', 'modal-util-container', util);
+            setField('modal-fiabilite', 'modal-fiabilite-container', fiabilite);
+
+            // Handle link
+            const linkBtn = articleModal.querySelector('#modal-link');
+            if (lien) {
+                linkBtn.href = lien;
+                linkBtn.style.display = 'inline-block';
+            } else {
+                linkBtn.style.display = 'none';
+            }
+
+            // Handle image
+            const modalImg = articleModal.querySelector('#modal-image');
+            const imgContainer = articleModal.querySelector('#modal-img-container');
+            if (image) {
+                modalImg.src = image;
+                modalImg.alt = titre;
+                imgContainer.style.display = 'block';
+            } else {
+                imgContainer.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
 
 <div style="min-height: 100px;"></div>
 
