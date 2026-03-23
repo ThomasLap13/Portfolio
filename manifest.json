@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://www.slapia.com/assets/img/Thomas-Lapierre.jpg",
+      "src": "https://www.slapia.com/assets/img/team/Thomas-Lapierre.jpg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "https://www.slapia.com/assets/img/Thomas-Lapierre.jpg",
+      "src": "https://www.slapia.com/assets/img/team/Thomas-Lapierre.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any"

@@ -20,7 +20,7 @@ if (!isset($base_path)) {
     <meta property="og:description" content="Administrateur Système & Réseau · BTS SIO SISR · Dijon">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://synologynasthomas.synology.me/">
-    <meta property="og:image" content="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg">
+    <meta property="og:image" content="https://www.slapia.com/assets/img/team/Thomas-Lapierre.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Structured Data (Person) -->
@@ -30,7 +30,7 @@ if (!isset($base_path)) {
       "@type": "Person",
       "name": "Thomas Lapierre",
       "url": "https://synologynasthomas.synology.me/",
-      "image": "https://www.slapia.com/assets/img/Thomas-Lapierre.jpg",
+      "image": "https://www.slapia.com/assets/img/team/Thomas-Lapierre.jpg",
       "jobTitle": "Administrateur Système & Réseau (en formation)",
       "description": "Étudiant BTS SIO SISR, alternant chez Micro-Méga, passionné par l'infrastructure IT et la cybersécurité.",
       "address": { "@type": "PostalAddress", "addressLocality": "Dijon", "addressCountry": "FR" },
@@ -69,7 +69,7 @@ if (!isset($base_path)) {
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/styles.css">
 
-    <link rel="shortcut icon" href="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.slapia.com/assets/img/team/Thomas-Lapierre.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -96,7 +96,7 @@ if (!isset($base_path)) {
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo $base_path; ?>">
-                    <img src="https://www.slapia.com/assets/img/Thomas-Lapierre.jpg" alt="Thomas Lapierre" height="44" loading="lazy" class="rounded-circle">
+                    <img src="https://www.slapia.com/assets/img/team/Thomas-Lapierre.jpg" alt="Thomas Lapierre" height="44" loading="lazy" class="rounded-circle">
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu">
                     <span class="navbar-toggler-icon"></span>
