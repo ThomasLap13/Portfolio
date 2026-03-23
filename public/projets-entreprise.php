@@ -155,6 +155,123 @@ include '../includes/header.php';
             </div>
         </section>
 
+        <!-- Synthèse des Activités & Projets -->
+        <section class="mb-5" id="synthese-activites">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold"><i class="fas fa-layer-group me-2 text-primary"></i>Vue d'Ensemble des Missions</h3>
+                <p class="text-muted">Synthèse structurée des différentes activités et domaines d'intervention.</p>
+            </div>
+            
+            <div class="card border-0 glass-card p-0 overflow-hidden shadow-lg">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 align-middle" style="font-size: 0.85rem;">
+                        <thead class="bg-primary bg-opacity-10 text-nowrap">
+                            <tr>
+                                <th class="ps-4 py-3">Domaine / Activité</th>
+                                <th class="py-3">Analyse & Besoins</th>
+                                <th class="py-3">Réalisation & Support</th>
+                                <th class="py-3">Gestion de Projet</th>
+                                <th class="py-3">Déploiement & Accomp.</th>
+                                <th class="pe-4 py-3">Capitalisation & Veille</th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-top-0">
+                            <!-- Helpdesk -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-headset text-primary me-2"></i>Gestion Helpdesk (N1/N2)</td>
+                                <td class="text-muted">Qualification des besoins, priorisation, traçabilité et respect des procédures.</td>
+                                <td>Prise en charge, diagnostic, résolution, escalade, clôture et retour utilisateur. Support distant.</td>
+                                <td class="text-center text-muted">-</td>
+                                <td>Assistance à la prise en main, configuration applicative et contrôle post-intervention.</td>
+                                <td class="pe-4">Mise à jour des bonnes pratiques et retours d'expérience sur incidents récurrents.</td>
+                            </tr>
+                            <!-- Postes -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-desktop text-primary me-2"></i>Préparation Postes & Images</td>
+                                <td class="text-muted">Création/maintenance d'images système : standardisation, conformité, drivers.</td>
+                                <td>Planification des étapes (master, tests, déploiement) et suivi des écarts.</td>
+                                <td class="text-center text-muted">Planification & Suivi</td>
+                                <td>Installation, jonction domaine, configuration session et logiciels métiers.</td>
+                                <td class="pe-4 text-muted">-</td>
+                            </tr>
+                            <!-- Comptes -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-user-shield text-primary me-2"></i>Gestion Comptes & Sessions</td>
+                                <td class="text-muted">Création, modification, désactivation. Application des habilitations et moindre privilège.</td>
+                                <td>Prise en charge des incidents liés aux accès (verrouillages, mots de passe, droits).</td>
+                                <td class="text-center text-muted">-</td>
+                                <td>Mise à disposition des accès : sessions, profil, partages, imprimantes et applications.</td>
+                                <td class="pe-4 text-muted">-</td>
+                            </tr>
+                            <!-- Maintenance -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-tools text-primary me-2"></i>Maintenance & Surveillance</td>
+                                <td class="text-muted">Vérification des sauvegardes, supervision, inventaire matériel/logiciel, correctifs.</td>
+                                <td>Interventions hors tickets : analyse de cause, rétablissement service, communication.</td>
+                                <td class="text-center text-muted">-</td>
+                                <td>Restauration de données sur demande : tests de cohérence et validation utilisateur.</td>
+                                <td class="pe-4 text-muted">-</td>
+                            </tr>
+                            <!-- Réseau -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-network-wired text-primary me-2"></i>Réseau & VPN</td>
+                                <td class="text-muted">Mise en conformité sécurité des accès distants : règles, droits, gestion des comptes.</td>
+                                <td>Résolution incidents réseau : diagnostic (connectivité, DNS, routage), corrections.</td>
+                                <td class="text-center text-muted">-</td>
+                                <td>Déploiement VPN : configuration client/serveur, attribution des accès, tests d'intégration.</td>
+                                <td class="pe-4 text-muted">-</td>
+                            </tr>
+                            <!-- Cybersécurité -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-shield-virus text-danger me-2"></i>Cybersécurité</td>
+                                <td class="text-muted">Gestion alertes, application de correctifs, contrôle de conformité, accès sensibles.</td>
+                                <td>Traitement d'incidents : analyse, confinement, remédiation et compte-rendu.</td>
+                                <td class="text-center text-muted">-</td>
+                                <td>Sensibilisation : recommandations aux utilisateurs (bonnes pratiques, phishing, MFA).</td>
+                                <td class="pe-4">Documentation : procédures de réponse à incident et fiches réflexes sécurité.</td>
+                            </tr>
+                            <!-- Scripts -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-code text-info me-2"></i>Scripts & Automatisation</td>
+                                <td class="text-muted">Développement (déploiement, inventaire, nettoyage), fiabilisation et contrôle.</td>
+                                <td>Automatisation des tâches répétitives et reporting via scripts PowerShell/Python.</td>
+                                <td>Recueil du besoin, versioning, tests, mise en production et suivi.</td>
+                                <td>Installation et configuration de logiciels métiers + maintenance d'apps spécifiques.</td>
+                                <td class="pe-4 text-muted">-</td>
+                            </tr>
+                            <!-- Documentation -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-file-alt text-warning me-2"></i>Documentation & KB</td>
+                                <td class="text-muted">Mise à jour du patrimoine : inventaire, référentiels, procédures de sauvegarde.</td>
+                                <td>Création de fiches réflexes pour le support : diagnostic, procédures standards (VPN, comptes).</td>
+                                <td>Organisation mode projet : collecte besoins, structuration (wiki), validation, versioning.</td>
+                                <td>Guides utilisateurs (prise en main), bonnes pratiques et supports de formation courts.</td>
+                                <td class="pe-4">Capitalisation & veille : formalisation retours d'expérience, maintien identité pro.</td>
+                            </tr>
+                            <!-- Achats -->
+                            <tr>
+                                <td class="ps-4 fw-bold"><i class="fas fa-shopping-cart text-primary me-2"></i>Achat Matériels IT</td>
+                                <td class="text-muted">Recensement des besoins, demandes de devis, commande, réception, inventaire.</td>
+                                <td class="text-center text-muted">-</td>
+                                <td class="text-center text-muted">-</td>
+                                <td>Mise à disposition des équipements : préparation, configuration et remise utilisateurs.</td>
+                                <td class="pe-4 text-muted">Traçabilité : suivi commandes, garantie, mise à jour documentation.</td>
+                            </tr>
+                            <!-- IA -->
+                            <tr class="bg-white bg-opacity-5">
+                                <td class="ps-4 fw-bold"><i class="fas fa-robot text-success me-2"></i>IA & Automatisation</td>
+                                <td class="text-muted">Gouvernance IA : outils/flux, habilitations, conformité (RGPD), gestion données.</td>
+                                <td>Support assisté par IA : qualification, solutions, création de réponses types.</td>
+                                <td>Cadrage, prototypage Power Apps, flux Power Automate, tests d'intégration, suivi.</td>
+                                <td>Mise à disposition agents IA : intégration, paramétrage, doc et accompagnement.</td>
+                                <td class="pe-4">Veille & montée en compétences IA : bonnes pratiques, sécurité, expérimentations.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
         <hr class="my-5 opacity-25">
 
         <!-- Tri du NAS -->
