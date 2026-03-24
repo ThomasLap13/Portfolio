@@ -115,8 +115,8 @@ $age = $diff->y;
                                 <img src="<?php echo $base_path; ?>assets/images/formations/saint-benigne.jpg"
                                      class="rounded-circle" style="width:42px;height:42px;object-fit:cover;" loading="lazy">
                                 <div>
-                                    <h6 class="mb-0 fw-bold">BTS SIO — option SISR</h6>
-                                    <small class="text-muted">St-Bénigne · Dijon · 2024–2026</small>
+                                    <h6 class="mb-0 fw-bold text-primary">BTS SIO — option SISR (Diplôme d'État Français)</h6>
+                                    <small class="text-muted">St-Bénigne · Dijon (France) · 2024–2026</small>
                                 </div>
                             </div>
                         </div>
@@ -163,11 +163,6 @@ $age = $diff->y;
                 <span class="stat-number" data-counter data-target="20" data-suffix="+">0</span>
                 <span class="stat-label">Tickets / semaine</span>
             </div>
-            <div class="stat-card stagger-4">
-                <i class="fas fa-server stat-icon"></i>
-                <span class="stat-number" data-counter data-target="2" data-suffix=" To">0</span>
-                <span class="stat-label">Espace libéré NAS</span>
-            </div>
         </div>
     </section>
 
@@ -182,9 +177,9 @@ $age = $diff->y;
                 <div class="card p-4 h-100">
                     <h5 class="text-primary mb-4"><i class="fas fa-layer-group me-2"></i>Stack technique</h5>
                     <p class="text-muted small mb-4">
-                        Formé sur des environnements réels en alternance chez Micro-Méga, mes compétences couvrent l'ensemble de la chaîne système &amp; réseau — du câble au cloud.
+                        Formé sur des environnements réels en alternance chez Micro-Méga et <strong>aligné sur les exigences du référentiel national du BTS SIO (option SISR) en France</strong>, mes compétences couvrent l'administration dynamique d'infrastructures, la cybersécurité et la résolution d'incidents.
                     </p>
-                    <div class="d-flex flex-wrap gap-2">
+                    <div class="d-flex flex-wrap gap-2 mb-4">
                         <span class="skill-tag"><i class="fab fa-windows me-1"></i>Windows Server</span>
                         <span class="skill-tag"><i class="fab fa-linux me-1"></i>Linux Debian</span>
                         <span class="skill-tag"><i class="fas fa-network-wired me-1"></i>Cisco</span>
@@ -195,6 +190,12 @@ $age = $diff->y;
                         <span class="skill-tag"><i class="fab fa-php me-1"></i>PHP</span>
                         <span class="skill-tag"><i class="fas fa-terminal me-1"></i>PowerShell</span>
                         <span class="skill-tag"><i class="fab fa-git-alt me-1"></i>Git / CI-CD</span>
+                    </div>
+                    <div class="mt-auto pt-3 border-top border-secondary border-opacity-25">
+                        <div class="d-flex align-items-center gap-2 text-primary small">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="fw-bold">Blocs de compétences certifiés SISR (France)</span>
+                        </div>
                     </div>
                 </div>
             </div>
