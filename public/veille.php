@@ -230,48 +230,56 @@ if (!empty($data['results'])) {
 
 <!-- Modern Modal for Article Details -->
 <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
         <div class="modal-content glass-card border-secondary border-opacity-25 shadow-2xl">
-            <div class="modal-header border-bottom border-secondary border-opacity-25 p-4">
-                <h5 class="modal-title fw-bold" id="articleModalLabel">Détails de l\'article</h5>
+            <div class="modal-header border-bottom border-secondary border-opacity-25 px-4 py-3">
+                <h5 class="modal-title fw-bold" id="articleModalLabel">Détails de l'article</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-4">
                 <div class="row g-4">
-                    <div class="col-lg-5" id="modal-img-container">
-                        <img id="modal-image" src="" alt="" class="img-fluid rounded-4 shadow-sm w-100" style="height: 300px; object-fit: cover;">
+                    <div class="col-12 col-lg-5" id="modal-img-container">
+                        <img id="modal-image" src="" alt="" class="img-fluid rounded-4 shadow-sm w-100 modal-article-img">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-12 col-lg-7">
                         <h6 id="modal-date" class="text-primary small mb-2"></h6>
-                        <h3 id="modal-title" class="fw-bold mb-4"></h3>
-                        <div id="modal-content" class="modal-info-scroll" style="max-height: 400px; overflow-y: auto; padding-right: 15px;">
-                            <div class="mb-3">
+                        <h3 id="modal-title" class="fw-bold mb-4 fs-4"></h3>
+                        <div id="modal-content">
+                            <div class="mb-4">
                                 <h6 class="text-white-50 small text-uppercase mb-2"><i class="fas fa-align-left me-2"></i>Résumé</h6>
-                                <p id="modal-resume" class="text-light"></p>
+                                <p id="modal-resume" class="text-light lh-base"></p>
                             </div>
                             <div class="row g-3">
-                                <div class="col-md-6" id="modal-pro-container">
-                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-briefcase me-2"></i>Intérêt Pro</h6>
-                                    <p id="modal-pro" class="small text-muted"></p>
+                                <div class="col-12 col-md-6" id="modal-pro-container">
+                                    <div class="p-3 rounded-3 bg-white bg-opacity-5 h-100">
+                                        <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-briefcase me-2"></i>Intérêt Pro</h6>
+                                        <p id="modal-pro" class="small text-muted mb-0"></p>
+                                    </div>
                                 </div>
-                                <div class="col-md-6" id="modal-perso-container">
-                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-user-light me-2"></i>Intérêt Perso</h6>
-                                    <p id="modal-perso" class="small text-muted"></p>
+                                <div class="col-12 col-md-6" id="modal-perso-container">
+                                    <div class="p-3 rounded-3 bg-white bg-opacity-5 h-100">
+                                        <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-user me-2"></i>Intérêt Perso</h6>
+                                        <p id="modal-perso" class="small text-muted mb-0"></p>
+                                    </div>
                                 </div>
-                                <div class="col-md-6" id="modal-util-container">
-                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-tools me-2"></i>Mise en œuvre</h6>
-                                    <p id="modal-util" class="small text-muted"></p>
+                                <div class="col-12 col-md-6" id="modal-util-container">
+                                    <div class="p-3 rounded-3 bg-white bg-opacity-5 h-100">
+                                        <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-tools me-2"></i>Mise en œuvre</h6>
+                                        <p id="modal-util" class="small text-muted mb-0"></p>
+                                    </div>
                                 </div>
-                                <div class="col-md-6" id="modal-fiabilite-container">
-                                    <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-shield-alt me-2"></i>Fiabilité</h6>
-                                    <p id="modal-fiabilite" class="small text-muted"></p>
+                                <div class="col-12 col-md-6" id="modal-fiabilite-container">
+                                    <div class="p-3 rounded-3 bg-white bg-opacity-5 h-100">
+                                        <h6 class="text-primary small text-uppercase mb-2"><i class="fas fa-shield-alt me-2"></i>Fiabilité</h6>
+                                        <p id="modal-fiabilite" class="small text-muted mb-0"></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer border-top border-secondary border-opacity-25 p-4 d-flex gap-3">
+            <div class="modal-footer border-top border-secondary border-opacity-25 px-4 py-3 d-flex gap-3">
                 <button type="button" class="btn btn-outline-light px-4" data-bs-dismiss="modal">Fermer</button>
                 <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-custom px-4 flex-grow-1">
                     <i class="fas fa-external-link-alt me-2"></i>Lire l'article complet
@@ -282,15 +290,19 @@ if (!empty($data['results'])) {
 </div>
 
 <style>
-.modal-info-scroll::-webkit-scrollbar {
-    width: 4px;
+.modal-article-img {
+    height: 320px;
+    object-fit: cover;
 }
-.modal-info-scroll::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
+@media (max-width: 991.98px) {
+    .modal-article-img {
+        height: 220px;
+    }
 }
-.modal-info-scroll::-webkit-scrollbar-thumb {
-    background: rgba(var(--bs-primary-rgb), 0.5);
-    border-radius: 10px;
+@media (max-width: 575.98px) {
+    .modal-article-img {
+        height: 200px;
+    }
 }
 </style>
 
