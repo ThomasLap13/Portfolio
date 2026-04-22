@@ -201,60 +201,28 @@ $age = $diff->y;
             <div class="col-lg-7">
                 <div class="skills-grid">
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fab fa-windows text-primary"></i>Windows Server / AD</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+                        <span class="skill-name"><i class="fab fa-windows text-primary"></i>Windows Server / AD</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fas fa-network-wired text-primary"></i>Réseau / Cisco IOS</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+                        <span class="skill-name"><i class="fas fa-network-wired text-primary"></i>Réseau / Cisco IOS</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fab fa-linux text-primary"></i>Linux (Debian / Ubuntu)</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+                        <span class="skill-name"><i class="fab fa-linux text-primary"></i>Linux (Debian / Ubuntu)</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fas fa-cloud text-primary"></i>Azure / Entra ID</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div>
+                        <span class="skill-name"><i class="fas fa-cloud text-primary"></i>Azure / Entra ID</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fas fa-shield-alt text-primary"></i>Cybersécurité</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div>
+                        <span class="skill-name"><i class="fas fa-shield-alt text-primary"></i>Cybersécurité</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fab fa-docker text-primary"></i>Docker / Conteneurisation</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="67"></div></div>
+                        <span class="skill-name"><i class="fab fa-docker text-primary"></i>Docker / Conteneurisation</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fas fa-terminal text-primary"></i>PowerShell / Scripting</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="71"></div></div>
+                        <span class="skill-name"><i class="fas fa-terminal text-primary"></i>PowerShell / Scripting</span>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name"><i class="fas fa-robot text-primary"></i>n8n / Automatisation IA</span>
-                            <span class="skill-pct">0%</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+                        <span class="skill-name"><i class="fas fa-robot text-primary"></i>n8n / Automatisation IA</span>
                     </div>
                 </div>
             </div>
