@@ -153,16 +153,26 @@ if (!empty($data['results'])) {
         $date   = $props['Date']['date']['start'] ?? '';
         $image  = $props['Image']['rich_text'][0]['plain_text'] ?? '';
 
-        // Correction des URLs IT-Connect anciennes (bug og:image avec wp-content-itc)
-        if ($image) {
-            $image = str_replace('/wp-content-itc/', '/wp-content/', $image);
+        // --- Correction des URLs IT-Connect ---
+        // IT-Connect sert ses images en .jpg.webp sous le chemin /wp-content-itc/
+        // (a) Restaurer -itc pour les anciennes URLs corrompues par une correction erronée
+        // (b) Ajouter l'extension .webp si manquante
+        if ($image && strpos($image, 'it-connect.fr') !== false) {
+            // (a) Si l'URL contient wp-content/ (sans -itc), remettre -itc
+            $image = str_replace('/wp-content/uploads/', '/wp-content-itc/uploads/', $image);
+            // (b) Ajouter .webp si manquant
+            if (preg_match('/\.(jpg|jpeg|png)$/i', $image) && substr($image, -5) !== '.webp') {
+                $image = $image . '.webp';
+            }
         }
+        // ---------------------------------------
 
-        // Fallback Microlink si pas d'image
+        // --- FALLBACK MICROLINK ---
+        // Si pas d'image dans Notion, mais qu'on a un lien, on demande à Microlink
         if (empty($image) && !empty($lien)) {
             $image = "https://api.microlink.io/?url=" . urlencode($lien) . "&embed=image.url";
         }
-        // ----------------------------------
+        // --------------------------
 
         echo '<div class="col-md-6 col-lg-4">';
         echo '<div class="card glass-card-hover h-100 border-0 overflow-hidden">';
