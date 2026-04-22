@@ -164,35 +164,8 @@ include '../includes/header.php';
                         <h2 class="mb-0">Site Quiz Moto</h2>
                     </div>
 
-                    <div id="carouselQuizMoto" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselQuizMoto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselQuizMoto" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto" loading="lazy">
-                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
-                                    <h5>Mode Classique</h5>
-                                    <p class="mb-0">Devinez le modèle à partir de l'image.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto 2" loading="lazy">
-                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
-                                    <h5>Mode Progressif</h5>
-                                    <p class="mb-0">L'image se dévoile petit à petit. Rapidité = Points !</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselQuizMoto" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Précédent</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselQuizMoto" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Suivant</span>
-                        </button>
+                    <div class="shadow-lg rounded-4 overflow-hidden mb-4">
+                        <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/site moto/site-moto.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Site Quiz Moto" loading="lazy">
                     </div>
 
                     <div class="card p-4 mb-4 border-0 glass-card-hover">
@@ -229,27 +202,8 @@ include '../includes/header.php';
                         <h2 class="mb-0">Jeu des 7 Erreurs</h2>
                     </div>
 
-                    <div id="carousel7Erreurs" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-4" data-bs-ride="carousel" data-bs-interval="5000">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel7Erreurs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/7 erreurs/7erreurs.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Jeu des 7 erreurs" loading="lazy">
-                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
-                                    <h5>Interactivité</h5>
-                                    <p class="mb-0">Projet axé sur la gestion des événements JavaScript et la manipulation du DOM.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel7Erreurs" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Précédent</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel7Erreurs" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Suivant</span>
-                        </button>
+                    <div class="shadow-lg rounded-4 overflow-hidden mb-4">
+                        <img src="<?php echo $base_path; ?>assets/images/projets/scolaires/7 erreurs/7erreurs.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Jeu des 7 erreurs" loading="lazy">
                     </div>
 
                     <div class="card p-4 mb-4 border-0 glass-card-hover">

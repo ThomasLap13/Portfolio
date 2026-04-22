@@ -28,39 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ─────────────────────────── */
-    /* 2. Lenis Smooth Scroll (Disabled) */
-    /* ─────────────────────────── */
-    let lenis = null;
-    /*
-    if (typeof Lenis !== "undefined") {
-        lenis = new Lenis({
-            duration: 0.85,
-            easing: t => 1 - Math.pow(1 - t, 4), 
-            smooth: true,
-            smoothTouch: false,
-        });
-
-        if (document.getElementById("welcomeScreen")) {
-            lenis.stop();
-        }
-
-        window._lenis = lenis;
-
-        if (typeof ScrollTrigger !== "undefined") {
-            lenis.on("scroll", ScrollTrigger.update);
-            gsap.ticker.add(time => lenis.raf(time * 1000));
-            gsap.ticker.lagSmoothing(0);
-        } else {
-            (function raf(time) {
-                lenis.raf(time);
-                requestAnimationFrame(raf);
-            })();
-        }
-    }
-    */
-
-    /* ─────────────────────────── */
-    /* 3. Page Transitions         */
+    /* 2. Page Transitions         */
     /* ─────────────────────────── */
     const overlay = document.createElement("div");
     overlay.id = "page-transition";
