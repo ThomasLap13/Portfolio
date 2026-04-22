@@ -151,7 +151,7 @@ if (!empty($data['results'])) {
         $appreciation   = $props['Appréciation Fiabilité']['rich_text'][0]['plain_text'] ?? '';
         $lien   = $props['Lien']['url'] ?? '';
         $date   = $props['Date']['date']['start'] ?? '';
-        $image  = $props['Image']['url'] ?? '';
+        $image  = $props['Image']['rich_text'][0]['plain_text'] ?? '';
 
         // --- AJOUT : FALLBACK MICROLINK ---
         // Si pas d'image dans Notion, mais qu'on a un lien, on demande à Microlink
