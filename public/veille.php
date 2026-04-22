@@ -153,10 +153,13 @@ if (!empty($data['results'])) {
         $date   = $props['Date']['date']['start'] ?? '';
         $image  = $props['Image']['rich_text'][0]['plain_text'] ?? '';
 
-        // --- AJOUT : FALLBACK MICROLINK ---
-        // Si pas d'image dans Notion, mais qu'on a un lien, on demande à Microlink
+        // Correction des URLs IT-Connect anciennes (bug og:image avec wp-content-itc)
+        if ($image) {
+            $image = str_replace('/wp-content-itc/', '/wp-content/', $image);
+        }
+
+        // Fallback Microlink si pas d'image
         if (empty($image) && !empty($lien)) {
-            // Cette URL va chercher l'image principale ou faire une capture d'écran
             $image = "https://api.microlink.io/?url=" . urlencode($lien) . "&embed=image.url";
         }
         // ----------------------------------
